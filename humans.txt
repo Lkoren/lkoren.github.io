@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name>Liav Koren</name>
+    <role>Designer/Developer/Content creator/pixel placer</role>
+    <twitter>@LiavKoren</twitter>
+
+# THANKS
+
+    <names>HTML5 Boilerplate/initializr, jQuery, JoHummer, Cube the stupid cat, Jen Simmons, Paul Irish, Divia, Chris Coyer, Brad Frost, Eric Haines, many others.</names>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    javascript, jQuery, webGL, Modernizr

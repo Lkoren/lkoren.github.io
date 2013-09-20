@@ -56,16 +56,18 @@ h3{
 	padding-bottom:90px;
 	margin:auto;
 	margin-top: 2em;
-	border: 1px solid;
+	border: 0.5px solid;
 	background: #ffffff top left no-repeat fixed;
 	background-image: url(../images/index_background_800square.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: relative; 
 	border:thin;
-	border-style: dashed;
+	//border-style: dashed;
+	border-style: solid;
+	border-color: #bbbbbb;
 	position:relative; 
-	@include round-bottom(0, 30)
+	@include round-bottom(0, 30) //fits a moz bug
 	}
 .doc-container {
 	.main-page {
@@ -80,7 +82,10 @@ h3{
 	width: 47em;
 	left: 5%;
 	opacity: 0.9;
-	background-color: #FFC;
+	//background-color: #FFC;
+	background-color: #fDfDfD;	
+	border-color: #bbbbbb;
+	@include round-bottom(5,15);
 	border-width:thin;	
 	border-style: dotted;	
 	padding: 20px;
@@ -179,6 +184,7 @@ h3{
 		position: relative; 
 		border-left:none;
 		border-bottom:thin;
+		border-color: #bbbbbb;
 		border-left-style: none;
 		border-bottom-style:solid;
 		border-right:none;
@@ -261,6 +267,7 @@ h3{
 		border-left-style: none;
 		border-bottom-style:solid;
 		border-right:none;
+		border-color: #bbbbbb;
 		float: left;
 		padding-bottom:30px;
 		position:relative;  

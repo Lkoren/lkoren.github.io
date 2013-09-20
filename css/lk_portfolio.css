@@ -1,0 +1,174 @@
+/* @charset "utf-8";
+CSS Document */
+
+body{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size: 62.5%; }
+ul{
+list-style: none; }
+p {
+font-size: 1.6em; }
+#thumbnails {
+	position: absolute;
+	height: auto;
+	top: 83px;
+	right: 5%;
+	width: 200px;
+}
+/*************This correctly places the thumbnails for a wide-screen layout*/
+.gallery#thumbnails {
+	position: relative;
+	height: auto;
+	width: auto;
+	top: 60px;
+	float: right;
+	right:5%;	
+	max-width:100%;
+	display:inline;
+}
+.gallery.topLevel#thumbnails  { /** this attempts to fix the v alignment of thumbnails in top-level galleries**/
+	position:absolute;
+	top:141px;
+	right:5%;}
+
+.gallery#thumbnails img{
+		max-width:100%;
+}
+.gallery a {
+	clear:both;
+	display: block;
+	}
+#pictureBox {
+	position: relative;
+	top:60px;
+	float:left;
+	width: auto;
+	padding-left:5%;
+	max-width:100%;
+}
+#pictureBox img {
+	float:left;
+	}	
+#galleryWrapper	{	
+	width:100%;
+	height:500px;
+	position:relative;	}
+
+/* Media queries ****************************************/	
+/*medium*******************************************************************************/
+@media screen and (max-width: 900px) and (min-width: 520px) {
+/********************************************************************************/
+	#thumbnails, .gallery#thumbnails{
+		right:10px;}
+	#infoBox{
+		left:5%;
+		width:40em;}
+}
+/********************************************************************************/
+@media screen and (max-width: 759px)and (min-width: 520px) {
+/********************************************************************************/
+	#infoBox{
+		left:0%;
+		width:60%;}
+	#thumbnails{  
+		right:0px;}		
+	.gallery#thumbnails, .gallery.topLevel#thumbnails{		
+		right:1.5%;
+		}
+}
+/*second smallest*******************************************************************************/
+@media screen and (max-width: 520px) and (min-width:350px){
+/********************************************************************************/
+	#infoBox{
+		float:none;
+		display:block;
+		clear:both;
+		height:auto;
+		position:static;}
+	#thumbnails, #thumbnails.gallery, .gallery.topLevel#thumbnails{
+		position:relative;
+		float:none;
+		display:block;
+		right:auto;
+		left:auto;
+		padding-right: 2%;
+		padding-left: 7%;
+		top:0px;
+		clear:both;	
+		width:auto;
+		text-align:center;}
+	#thumbnails img, #thumbnails.gallery img , #galleryWrapper #thumbnails.gallery  img{
+		width:49%;
+		max-width: 100%;
+	}
+	ol{
+	width:auto;
+	padding-right:10%;}
+	li{
+		display:inline;
+		left:auto;
+		right:auto;}
+	.gallery a {
+		display:inline;
+	}	
+	/*** This code correctly formats the thumbnail displays for the actual gallery pages (eg, pRob1, pRob2...), centering them under the main image in a line **/
+	#galleryWrapper #thumbnails.gallery {
+		white-space:normal;	
+		height: auto;
+		width:auto;
+		margin-right:auto;
+		margin-left:auto;
+		}	
+}
+/*smallest*******************************************************************************/
+@media screen and (max-width: 349px) {
+/********************************************************************************/
+	#infoBox{
+		float:none;
+		display:block;
+		clear:both;
+		height:auto;
+		position:static;}
+	#thumbnails, #thumbnails.gallery, .gallery.topLevel#thumbnails{
+		position:relative;
+		float:none;
+		display:block;
+		right:auto;
+		padding-right:8%;
+		left:20px;
+		top:0px;
+		clear:both;
+		width:auto;
+		text-align:center;}	
+	#thumbnails.gallery {
+		display:inline;}
+	
+	ol{
+	width:auto;
+	padding-right: 10%;
+	padding-left: 5%;}	
+	#thumbnails img{
+		width:100%;
+		max-width:100%;
+		}
+	#content_container{
+		height:auto;
+		}
+	.gallery a {
+		display:inline;
+	}
+	/*** This code correctly formats the thumbnail displays for the actual gallery pages (eg, pRob1, pRob2...) **/
+	#galleryWrapper #thumbnails.gallery {
+		white-space:normal;	
+		height: auto;
+		}	
+	#galleryWrapper #thumbnails.gallery  img {
+		max-width:100%;
+		padding:1%;
+		padding-left:5%;
+		padding-right:5%;
+		margin-left:auto;
+		margin-right:auto;
+		width:80%;
+		}
+}

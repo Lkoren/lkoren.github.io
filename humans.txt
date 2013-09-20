@@ -9,7 +9,7 @@
 
 # THANKS
 
-    <names>HTML5 Boilerplate/initializr, jQuery, JoHummer, Cube the stupid cat, Jen Simmons, Paul Irish, Divia, Chris Coyer, Brad Frost, Eric Haines, many others.</names>
+    <names>HTML5 Boilerplate/initializr, jQuery, JoHummer, Cube the inconvenient cat, Jen Simmons, Paul Irish, Divia, Chris Coyer, Brad Frost, Eric Haines, many others.</names>
 
 # TECHNOLOGY COLOPHON
 

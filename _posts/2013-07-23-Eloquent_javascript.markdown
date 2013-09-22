@@ -1,3 +1,4 @@
+
 Eloquent javascript
 
 This seems like a really nice middle ground. Over the last ten years or so, it seems like the entire internet has been busy turning itself into one big MOOC. The term was only even *coined* in 2008, but one of the essential characteristics of Open Source is that it generates communities of learners and educational material, and that's been going really strong for a good fifteen, twenty, thiry years now. 

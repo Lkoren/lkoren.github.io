@@ -1,3 +1,4 @@
+
 Coming to terms with the JS module pattern
 
 I've recently been working with Aesthetec Studio on a very neat project based around a signage system that's going to be installed into a teaching hospital in the US. The signage system is made of high-resolution LED pixels which are driven by some custom hardware. Each LED driver boards talks to a Raspbery Pi, which runs a custom display driver and web server. The display driver parses binary arrays into serial data that gets shot to the LED drivers. The webserver and everything it talks to has been my responsibily. 

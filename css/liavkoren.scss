@@ -22,25 +22,30 @@
 }
 
 ////
-//@include font-face('Amble-Light', './fonts/amble/Light/Amble-Light', 'Amble-Light');
-//@include font-face('ApolloMTStd', './fonts/Apollo MT Std/ApolloMTStd', 'ApolloMTStd');
-@include font-face('BerlingLTStd-Roman', './fonts/Berling/BerlingLTStd-Roman', 'BerlingLTStd-Roman');
+@include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
+@include font-face('OstrichSans-Black','./fonts/Ostrich/Ostrich-Black/OstrichSans-Black', 'OstrichSans-Black');
+@include font-face('raleway-regular', './fonts/Raleway/Raleway-regular/Raleway-Regular', 'Raleway-Regular');
+@include font-face('raleway-light', './fonts/Raleway/Raleway-light/raleway-light', 'raleway-light');
+
+////
+$nav-bar-beige: #D6D6C2;
+
 body{
-	//font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
-	//font-family: Amble-Light;
-	//font-family: ApolloMTStd;
-	font-family: BerlingLTStd-Roman;
 	font-size: 62.5%; 
+	h1 {
+		font-family: 'OstrichSans-Black';		
+	}
 	h2 {
-		font-size: 3em;
-		line-height: 2em;
+		font-family: 'ostrich-rounded';
+		font-size: 4.0em;
+		line-height: 1.5em;
 	}
 	p {
-		font-size: 2em;
+		font-family: 'raleway-light';
+		font-size: 1.8em;
 		line-height: 1.25em;
 	}
 }
-
 
 ul{
 list-style: none; }
@@ -57,8 +62,11 @@ h3{
 	margin:auto;
 	margin-top: 2em;
 	border: 0.5px solid;
-	background: #ffffff top left no-repeat fixed;
-	background-image: url(../images/index_background_800square.jpg);
+	background: #ffffff top right no-repeat fixed;
+	background-image: url(../images/index_background_800square_flipped.jpg);
+	img {
+		float: right;
+	}
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	position: relative; 
@@ -98,59 +106,67 @@ h3{
 	border-bottom-style:dotted;	
 	height: 80px;
 	h1 {
+		color: #776666;
 		position: absolute;
-		font-size:2.5em;
-		top:1em;
+		font-size:3.0em;
+		top:0.95em;
 		left:1.5em;
 	}	
 }	
-/* 
-.titleBar h1{
-	position: absolute;
-	font-size:2.5em;
-	top:1em;
-	left:1.5em;
-}
-*/
 .nav-bar {
-	background: #D6D6C2;
-	font-size:110%;
+	$nav-bar-height: 25px;
+	font-family: 'OstrichSans-Black';		
+	background: $nav-bar-beige;
+	font-size: 1.35em;
 	clear: left;
-	margin: 0 0 2em;
 	position: absolute;
 	right:5%;	
-	float:right;
-	top:73px;
+	float: left;
 	opacity:0.8;
-	//new:
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-	padding-top: 10px;
-	padding-left:10px;
-
+	height: $nav-bar-height;
+	top:77px;
+	h3 {
+		position: absolute;
+   		left: -999em; 
+	}
+	ul{   		
+   		float: left;   	
+   		height: $nav-bar-height;
+	}
+	li {
+		height: $nav-bar-height;
+		float: left;
+		font-size: 1.5em;
+		border-bottom: 0; 	
+		//
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	a {
+		height: $nav-bar-height;
+		display: inline; /*changed from block*/
+		padding: 0em 1em;
+		text-decoration: none;
+		color: #333;	
+		line-height: 32px;
+		//
+		&:hover{
+			height: $nav-bar-height;
+			//padding-bottom:-1px;
+			padding-top: 6px;
+			background-color: #f8f8f8;
+		}
+		//
+		&:first-child {
+			padding-left: 30px;
+		}		
+	}
+	.nav-current {
+		//font-weight: bold;
+	}
 }
-.nav-bar, .nav-bar ul {
-   float: left;}
-.nav-bar h3 {
-   position: absolute;
-   left: -999em; }
-.nav-bar ul {
-   border: 1px solid #e6e6e6;
-   float: left; }
- .nav-bar li {
-   float: left;
-   font-size: 1.5em;
-   border-bottom: 0;  }
-.nav-bar li:last-child {
-   border-bottom: 0; }
-.nav-bar a {
-   display: inline; /*changed from block*/
-   padding: 0em 1em;
-   text-decoration: none;
-   color: #333;  }
-.nav-bar a:hover {
-   background-color: #f8f8f8; }
-.nav-bar .nav-current {
-   font-weight: bold; }
    
  /*************************/  
 @media screen and (max-width: 759px)and (min-width: 520px) {
@@ -177,8 +193,8 @@ h3{
 		width:99%;
 		margin:auto;
 		border: 1px solid;
-		background: #ffffff top left no-repeat fixed;
-		background-image: url(../images/index_background_800square.jpg);
+		background: #ffffff top right no-repeat fixed;
+		background-image: url(../images/index_background_800square_flipped.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		position: relative; 

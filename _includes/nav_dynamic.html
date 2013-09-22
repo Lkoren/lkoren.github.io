@@ -1,0 +1,11 @@
+<div class ="nav-bar">    
+    <ul>
+        {% for p in site.pages sort_by:weight %}
+            {% if  p.url == page.url %}
+                <li class = "nav-current">{{p.title}}</li>
+            {% else  %}
+                <li class = "nav-link"><a href ="{{p.url}}">{{p.title}}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>                   
+</div>

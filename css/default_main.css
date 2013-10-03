@@ -1,160 +1,59 @@
-/*****************************************************************************/
 /*
-/* Common
-/*
-/*****************************************************************************/
+Syntax error: Invalid CSS after "0": expected expression (e.g. 1px, bold), was ";"
+        on line 9 of default_main.css
 
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
+4: /*
+5: /*****************************************************************************\/
+6: 
+7: /* Global Reset *\/
+8: * {
+9:   margin: 0;
+10:   padding: 0;
+11: }
+12: 
+13: html, body { height: 100%; }
+14: 
 
-html, body { height: 100%; }
-
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-
-ul.posts li {
-  line-height: 1.75em;
-}
-
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h1.title a {
-  color: #a00;
-}
-
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
+Backtrace:
+default_main.css:9
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/scss/parser.rb:1145:in `expected'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/lexer.rb:199:in `expected!'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:486:in `assert_done'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:50:in `parse'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:166:in `parse'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script.rb:31:in `parse'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:880:in `parse_script'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:608:in `parse_property'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:597:in `parse_property_or_rule'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:578:in `parse_line'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:471:in `build_tree'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:490:in `block in append_children'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `each'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `append_children'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:480:in `block in build_tree'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:473:in `each'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:473:in `build_tree'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:490:in `block in append_children'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `each'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `append_children'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:345:in `_to_tree'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:235:in `watch'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin.rb:107:in `method_missing'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:455:in `watch_or_update'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:318:in `process_result'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:41:in `parse'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:21:in `parse!'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \";\"\A         on line 9 of default_main.css\A \A 4: /*\A 5: /*****************************************************************************/\A 6: \A 7: /* Global Reset */\A 8: * {\A 9:   margin: 0;\A 10:   padding: 0;\A 11: }\A 12: \A 13: html, body { height: 100%; }\A 14: "; }

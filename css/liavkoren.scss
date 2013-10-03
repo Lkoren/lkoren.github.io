@@ -13,11 +13,20 @@
 }
 
 @mixin round-bottom($top-radius, $bottom-radius) {
-	-webkit-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px; 
+	-webkit-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
 	/* Firefox 1-3.6 */
-	-moz-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;  
+	-moz-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
 	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-	border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px; 
+	border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
+	background-clip: padding-box;
+}
+
+@mixin round-corner($corner) {
+	-webkit-border-radius: #{$corner}px 0px 0px 0px;
+	/* Firefox 1-3.6 */
+	-moz-border-radius: #{$corner}px 0px 0px 0px;
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: #{$corner}px 0px 0px 0px;
 	background-clip: padding-box;
 }
 
@@ -31,9 +40,9 @@
 $nav-bar-beige: #D6D6C2;
 
 body{
-	font-size: 62.5%; 
+	font-size: 62.5%;
 	h1 {
-		font-family: 'OstrichSans-Black';		
+		font-family: 'OstrichSans-Black';
 	}
 	h2 {
 		font-family: 'ostrich-rounded';
@@ -52,8 +61,8 @@ list-style: none; }
 p {
 font-size: 1.6em; }
 h3{
-	font-size: 2em;} 
-	
+	font-size: 2em;}
+
 .content-container{
 	width:90%;
 	height: 610px;
@@ -69,12 +78,12 @@ h3{
 	}
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	position: relative; 
+	position: relative;
 	border:thin;
 	//border-style: dashed;
 	border-style: solid;
 	border-color: #bbbbbb;
-	position:relative; 
+	position:relative;
 	@include round-bottom(0, 30) //fits a moz bug
 	}
 .doc-container {
@@ -87,23 +96,42 @@ h3{
 	position:relative;
 	height: auto;
 	/*width:45%;*/
-	width: 47em;
+	width: 46em;
 	left: 5%;
 	opacity: 0.9;
 	//background-color: #FFC;
-	background-color: #fDfDfD;	
+	background-color: #fDfDfD;
 	border-color: #bbbbbb;
-	@include round-bottom(5,15);
-	border-width:thin;	
-	border-style: dotted;	
-	padding: 20px;
-	padding-right: 10px;
-	top: 75px; }
-.titleBar{	
+	@include round-bottom(5,20);
+	border-width:thin;
+	border-style: dotted;
+	padding: 50px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	top: 75px;
+	p{
+		padding-bottom: 1.5em;
+		line-height: 1.4em;
+		a {
+			text-decoration: none;
+			//text-decoration-style: dotted;
+			color: #663333;
+			border-bottom-color: #996666;
+			border-bottom-style: dotted;
+			border-bottom-width: 1px;
+			&:hover{
+				color: #bb9999;
+				border-bottom-color: #bb9999;
+			}
+		}
+	}
+
+}
+.titleBar{
 	overflow: hidden;
 	background-repeat: no-repeat;
 	border-bottom-width:thin;
-	border-bottom-style:dotted;	
+	border-bottom-style:dotted;
 	height: 80px;
 	h1 {
 		color: #776666;
@@ -111,46 +139,46 @@ h3{
 		font-size:3.0em;
 		top:0.95em;
 		left:1.5em;
-	}	
-}	
+	}
+}
 .nav-bar {
-	$nav-bar-height: 25px;
-	font-family: 'OstrichSans-Black';		
+	$nav-bar-height: 25px;  ////ToDo: 25px in chrome better, 28 in FF. Garg. Why?
+	font-family: 'OstrichSans-Black';
 	background: $nav-bar-beige;
 	font-size: 1.35em;
 	clear: left;
 	position: absolute;
-	right:5%;	
+	right:5%;
 	float: left;
 	opacity:0.8;
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	height: $nav-bar-height;
 	top:77px;
+	@include round-corner(25);
 	h3 {
 		position: absolute;
-   		left: -999em; 
+   		left: -999em;
 	}
-	ul{   		
-   		float: left;   	
+	ul{
+   		float: left;
    		height: $nav-bar-height;
+		&:first-child{  ////ToDo: why doesn't hover + first child work?
+			@include round-corner(25);
+   		}
 	}
 	li {
 		height: $nav-bar-height;
 		float: left;
 		font-size: 1.5em;
-		border-bottom: 0; 	
-		//
-		&:last-child {
-			border-bottom: 0;
-		}
 	}
 	a {
 		height: $nav-bar-height;
 		display: inline; /*changed from block*/
 		padding: 0em 1em;
 		text-decoration: none;
-		color: #333;	
+		color: #433;
 		line-height: 32px;
+
 		//
 		&:hover{
 			height: $nav-bar-height;
@@ -161,14 +189,15 @@ h3{
 		//
 		&:first-child {
 			padding-left: 30px;
-		}		
+		}
 	}
 	.nav-current {
 		//font-weight: bold;
 	}
 }
-   
- /*************************/  
+
+ /*************************/
+ //Tablet format
 @media screen and (max-width: 759px)and (min-width: 520px) {
 	.nav-bar {
 	  display:block;
@@ -177,18 +206,23 @@ h3{
 	  position: relative;
 	  float: none;
 	  left:0%;
-	  margin:auto; 
+	  margin:auto;
 	  position:relative;
 	  top:0px;
-	  }	
+	  ul{
+		&:first-child{
+			@include round-corner(0);
+   		}
+	  }
+	}
 	.nav-bar, .nav-bar ul {
-      float: left;} 
+      float: left;}
 	.nav-bar ul {
-      float: left; } 
+      float: left; }
 	.nav-bar li {
       float: left;
       font-size: 1.5em;
-      border-bottom: 0; }   
+      border-bottom: 0; }
 	.content-container{
 		width:99%;
 		margin:auto;
@@ -197,7 +231,7 @@ h3{
 		background-image: url(../images/index_background_800square_flipped.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		position: relative; 
+		position: relative;
 		border-left:none;
 		border-bottom:thin;
 		border-color: #bbbbbb;
@@ -205,69 +239,69 @@ h3{
 		border-bottom-style:solid;
 		border-right:none;
 		float: left;
-		position:relative;  
+		position:relative;
 		@include round-bottom(0, 0)
-		}	 
-		
-	.info-box{		
+		}
+
+	.info-box{
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		position: absolute;
 		height: 615px;
-		width:30em;		
+		width:100%;
 		left: 0%;
-		margin:auto;	
+		margin:auto;
 		opacity: 0.9;
-		background-color: #FFC;
+		background-color: #fff;
 		border-width: thin;
-		border-style: dotted;	
+		border-style: dotted;
 		border-bottom: none;
 		border-left: none;
 		padding-left: 3em;
 		padding-right:3em;
 		padding-bottom: 3%;
 		float:none;
-		top: 80px; 
-		/*overflow: none;*/}	 
+		top: 80px;
+		/*overflow: none;*/}
 	.titleBar h1{
 		font-size:1.75em;
 		top:2em;
 		left:1.5em;
-	}		
+	}
 }
 @media screen and (max-width: 519px) {
 	.nav-bar{
 		display:block;
 		float:left;
-		width:100%;		
+		width:100%;
 		right:auto;
 		left:auto;
 		top:0px;
 		position:relative;
 		font-size:130%;
 		padding-left: 2em;
-		left:0%;  
+		left:0%;
 		overflow:hidden;
-	  }	
+	  }
 	.nav-bar li{
       float: left;
       font-size: 1.5em;
       border-bottom: 0;
-	  clear: both;	  
+	  clear: both;
 	  width:100%;
-	  display: block; }   
-	.nav-bar ul {	  
+	  display: block; }
+	.nav-bar ul {
 	  border: 0px;
 	  width:100%;}
 	.nav-bar a{
-	  width:auto; 
+	  width:auto;
 	  padding-right:100%;
-	}	  
+	}
 	.nav-bar a:hover {
 	   background-color: #E8E2D8;
-	}	  
+	}
 	.content-container{
-		width:100%;		
+		width:100%;
 		//height: auto;
 		height: 610px;
 		margin:auto;
@@ -275,8 +309,8 @@ h3{
 		background: #ffffff top left no-repeat fixed;
 		background-image: url(../images/index_background_mobile2.jpg);
 		background-repeat: no-repeat;
-		background-attachment: fixed;		
-		position: relative; 
+		background-attachment: fixed;
+		position: relative;
 		border-left:none;
 		border-right:none;
 		border-bottom:thin;
@@ -286,22 +320,22 @@ h3{
 		border-color: #bbbbbb;
 		float: left;
 		padding-bottom:30px;
-		position:relative;  
+		position:relative;
 		@include round-bottom(0, 0)
-	}	  			
-	.info-box{		
+	}
+	.info-box{
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		position: absolute;
 		//height: 590px;
 		height:auto;
-		width:100%;		
+		width:100%;
 		left: 0%;
-		margin:auto;	
+		margin:auto;
 		opacity: 0.75;
 		background-color: #FFC;
 		border-width: thin;
-		border-style: dotted;	
+		border-style: dotted;
 		border-bottom: none;
 		border-left: none;
 		border-right:none;
@@ -309,29 +343,29 @@ h3{
 		padding-right:3em;
 		padding-bottom: 3%;
 		float:none;
-		top: 80px; 
-		/*overflow: none;*/}	 
+		top: 80px;
+		/*overflow: none;*/}
 	.titleBar h1{
 		font-size:1.75em;
 		top:2em;
-		left:1.5em; 	}	
+		left:1.5em; 	}
 }
 @media screen and (min-width: 1335px) {
 	.content-container{
-		width:1200px;	}	
+		width:1200px;	}
 	.info-box{
-		width: 55em;}	
+		width: 55em;}
 	.doc-container{
 		width:1200px;
 		margin-left:auto;
 		margin-right:auto;}
-	.nav-bar{	
+	.nav-bar{
 		position:relative;
 		right:0%;
-		top:-649px;
-		float:right;}	
-	.nav-bar, .nav-bar ul{	
+		top:-645px;
+		float:right;}
+	.nav-bar, .nav-bar ul{
 		float:right;
 		}
-} 
+}
 

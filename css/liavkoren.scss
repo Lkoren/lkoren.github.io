@@ -48,6 +48,15 @@ $titleBar_h1: #776666;
 $titleBar_h1_darker: #443333;
 $navbar_background_hover: #f8f8f8;
 
+@media all and (min-width: 520px) {
+	.titlebar_image {
+		width: 1200px;
+		height: 80px;
+		background-image: url(../images/banner/life_banner_Revised_1200_fa.jpg);
+	}
+}
+
+
 body{
 	font-size: 62.5%;
 	h1 {
@@ -314,6 +323,10 @@ h3{
 //////////////////////
 @media screen and (max-width: 519px) {
 ////Phone
+	.titlebar_image {
+		background-image: none;
+	}
+
 	body{
 		p {
 			font-family: 'raleway-regular';
@@ -423,7 +436,6 @@ h3{
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
 		/*overflow: none;*/}
 	.titleBar h1{
-		background-image:
 		font-size:1.75em;
 		top:2em;
 		left:1.5em; 	}

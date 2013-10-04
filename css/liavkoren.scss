@@ -45,6 +45,7 @@ $hyperlink: #663333;
 $hyperlink_underline: #996666;
 $hyperlink_hover: #bb9999;
 $titleBar_h1: #776666;
+$titleBar_h1_darker: #443333;
 $navbar_background_hover: #f8f8f8;
 
 body{
@@ -168,6 +169,7 @@ h3{
 	ul{
    		float: left;
    		height: $nav-bar-height;
+		overflow: hidden; // http://msdn.microsoft.com/en-us/magazine/dn201719.aspx
 		&:first-child{  ////ToDo: why doesn't hover + first child work?
 			@include round-corner(25);
    		}
@@ -191,10 +193,10 @@ h3{
 			//padding-bottom:-1px;
 			padding-top: 6px;
 			background-color: $navbar_background_hover;
-
+			/*
 			&:first-child {
 				@include round-corner(30);
-			}
+			}*/
 		}
 		//
 		&:first-child {
@@ -216,6 +218,7 @@ h3{
 		}
 	}
 	.nav-bar {
+		width: 100%;
 	  display:block;
 	  font-size:130%;
 	  padding-left: 2em;
@@ -239,13 +242,16 @@ h3{
 	.nav-bar li {
       float: left;
       font-size: 1.5em;
-      border-bottom: 0; }
+      border-bottom: 0;
+      padding-right: 1em;
+  }
 	.background_image {
 		background-image: url(../images/index_background_800square_flipped.jpg);
 		background: $white top right no-repeat fixed;
 		position: relative;
 		widows: 100%;
 		z-index: 0;
+
 		-webkit-filter: blur(5px);
 		-moz-filter: blur(5px);
 		-o-filter: blur(5px);
@@ -276,11 +282,11 @@ h3{
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		position: absolute;
-		height: 615px;
+		height: 620px;
 		width:100%;
 		left: 0%;
 		margin:auto;
-		opacity: 0.9;
+		opacity: 0.8;
 		background-color: #fff;
 		border-width: thin;
 		border-style: dotted;
@@ -288,7 +294,8 @@ h3{
 		border-left: none;
 		padding-left: 3em;
 		padding-right:3em;
-		padding-bottom: 3%;
+		//padding-bottom: 3%;
+		padding-bottom: 0px;
 		float:none;
 		top: 80px;
 		filter: none;
@@ -298,9 +305,10 @@ h3{
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
 		/*overflow: none;*/}
 	.titleBar h1{
-		font-size:1.75em;
-		top:2em;
+		font-size:2.25em;
+		top:1.5em;
 		left:1.5em;
+		color: $titleBar_h1_darker;
 	}
 }
 //////////////////////
@@ -393,7 +401,7 @@ h3{
 		width:100%;
 		left: 0%;
 		margin:auto;
-		opacity: 0.75;
+		opacity: 0.65;
 		//background-color: #FFC;
 		background-color: $infobox-background;
 		border-width: thin;
@@ -415,6 +423,7 @@ h3{
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
 		/*overflow: none;*/}
 	.titleBar h1{
+		background-image:
 		font-size:1.75em;
 		top:2em;
 		left:1.5em; 	}

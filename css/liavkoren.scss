@@ -38,6 +38,14 @@
 
 ////
 $nav-bar-beige: #D6D6C2;
+$white: #FFFFFF;
+$content-border: #BBBBBB;
+$infobox-background: #fDfDfD;
+$hyperlink: #663333;
+$hyperlink_underline: #996666;
+$hyperlink_hover: #bb9999;
+$titleBar_h1: #776666;
+$navbar_background_hover: #f8f8f8;
 
 body{
 	font-size: 62.5%;
@@ -71,7 +79,7 @@ h3{
 	margin:auto;
 	margin-top: 2em;
 	border: 0.5px solid;
-	background: #ffffff top right no-repeat fixed;
+	background: $white top right no-repeat fixed;
 	background-image: url(../images/index_background_800square_flipped.jpg);
 	img {
 		float: right;
@@ -82,7 +90,7 @@ h3{
 	border:thin;
 	//border-style: dashed;
 	border-style: solid;
-	border-color: #bbbbbb;
+	border-color: $content-border;
 	position:relative;
 	@include round-bottom(0, 30) //fits a moz bug
 	}
@@ -92,16 +100,13 @@ h3{
 	}
 }
 .info-box{
-	/*position: absolute;*/
 	position:relative;
 	height: auto;
-	/*width:45%;*/
 	width: 46em;
 	left: 5%;
 	opacity: 0.9;
-	//background-color: #FFC;
-	background-color: #fDfDfD;
-	border-color: #bbbbbb;
+	background-color: $infobox-background;
+	border-color: $content-border;
 	@include round-bottom(5,20);
 	border-width:thin;
 	border-style: dotted;
@@ -115,13 +120,13 @@ h3{
 		a {
 			text-decoration: none;
 			//text-decoration-style: dotted;
-			color: #663333;
-			border-bottom-color: #996666;
+			color: $hyperlink;
+			border-bottom-color: $hyperlink_underline;
 			border-bottom-style: dotted;
 			border-bottom-width: 1px;
 			&:hover{
-				color: #bb9999;
-				border-bottom-color: #bb9999;
+				color: $hyperlink_hover;
+				border-bottom-color: $hyperlink_hover;
 			}
 		}
 	}
@@ -134,7 +139,7 @@ h3{
 	border-bottom-style:dotted;
 	height: 80px;
 	h1 {
-		color: #776666;
+		color: $titleBar_h1;
 		position: absolute;
 		font-size:3.0em;
 		top:0.95em;
@@ -184,7 +189,7 @@ h3{
 			height: $nav-bar-height;
 			//padding-bottom:-1px;
 			padding-top: 6px;
-			background-color: #f8f8f8;
+			background-color: $navbar_background_hover;
 		}
 		//
 		&:first-child {
@@ -199,6 +204,9 @@ h3{
  /*************************/
  //Tablet format
 @media screen and (max-width: 759px)and (min-width: 520px) {
+	body{
+		width:100%;
+	}
 	.nav-bar {
 	  display:block;
 	  font-size:130%;
@@ -224,17 +232,17 @@ h3{
       font-size: 1.5em;
       border-bottom: 0; }
 	.content-container{
-		width:99%;
+		width:100%;
 		margin:auto;
 		border: 1px solid;
-		background: #ffffff top right no-repeat fixed;
+		background: $white top right no-repeat fixed;
 		background-image: url(../images/index_background_800square_flipped.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		position: relative;
 		border-left:none;
 		border-bottom:thin;
-		border-color: #bbbbbb;
+		border-color: $content-border;
 		border-left-style: none;
 		border-bottom-style:solid;
 		border-right:none;
@@ -282,6 +290,10 @@ h3{
 		padding-left: 2em;
 		left:0%;
 		overflow:hidden;
+		height:auto;
+		ul {
+			height: auto;
+		}
 	  }
 	.nav-bar li{
       float: left;
@@ -298,7 +310,8 @@ h3{
 	  padding-right:100%;
 	}
 	.nav-bar a:hover {
-	   background-color: #E8E2D8;
+	   //background-color: #E8E2D8;
+	   background-color: $navbar_background_hover;
 	}
 	.content-container{
 		width:100%;
@@ -306,7 +319,7 @@ h3{
 		height: 610px;
 		margin:auto;
 		border: 1px solid;
-		background: #ffffff top left no-repeat fixed;
+		background: $white top left no-repeat fixed;
 		background-image: url(../images/index_background_mobile2.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -317,7 +330,7 @@ h3{
 		border-left-style: none;
 		border-bottom-style:solid;
 		border-right:none;
-		border-color: #bbbbbb;
+		border-color: $content-border;
 		float: left;
 		padding-bottom:30px;
 		position:relative;
@@ -333,7 +346,8 @@ h3{
 		left: 0%;
 		margin:auto;
 		opacity: 0.75;
-		background-color: #FFC;
+		//background-color: #FFC;
+		background-color: $infobox-background;
 		border-width: thin;
 		border-style: dotted;
 		border-bottom: none;

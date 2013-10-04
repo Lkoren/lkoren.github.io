@@ -327,7 +327,6 @@ h3{
 		background-image: none;
 		border-color: $white;
 	}
-
 	body{
 		p {
 			font-family: 'raleway-regular';
@@ -350,14 +349,17 @@ h3{
 			height: auto;
 		}
 		@include round-bottom(0,0);
-		padding-left:0.5em;
+		//padding-left:0.5em;
+		padding-left:0em;
 		li {
+			//margin-left:0.5em;
 	    	float: left;
       		font-size: 1.5em;
 		    border-bottom: 0;
 			clear: both;
 			width:100%;
 			display: block;
+			padding-top: 0.4em;
 		}
 		ul {
 			border: 0px;
@@ -367,38 +369,15 @@ h3{
 			}
 		}
 		a {
+			//font-family: 'raleway-light';
 			width:auto;
 			padding-right:100%;
-			&:hover {
-				background-color: $navbar_background_hover;
+			font-size: 1.25em;
+			&:first-child {
+				padding-left: 1em; //SHAME: needs &:first child to override .nav-bar a:first-child selector in desktop mode.
 			}
 		}
 	  }
-
-/*
-	.nav-bar li{
-      float: left;
-      font-size: 1.5em;
-      border-bottom: 0;
-	  clear: both;
-	  width:100%;
-	  display: block; }
-	.nav-bar ul {
-	  	border: 0px;
-	  	width:100%;
-		&:first-child {
-			@include round-corner(0);
-		}
-	}
-	.nav-bar a{
-	  width:auto;
-	  padding-right:100%;
-	}
-	.nav-bar a:hover {
-	   //background-color: #E8E2D8;
-	   background-color: $navbar_background_hover;
-	}
-*/
 	$content-container-height: 680px;
 	.background_image {
 		background-image: url(../images/index_background_mobile2.jpg);

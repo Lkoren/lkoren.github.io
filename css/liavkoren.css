@@ -321,7 +321,7 @@ h3 {
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
     border-radius: 0px 0px 0px 0px;
     background-clip: padding-box;
-    padding-left: 0.5em; }
+    padding-left: 0em; }
     .nav-bar ul {
       height: auto; }
     .nav-bar li {
@@ -330,7 +330,8 @@ h3 {
       border-bottom: 0;
       clear: both;
       width: 100%;
-      display: block; }
+      display: block;
+      padding-top: 0.4em; }
     .nav-bar ul {
       border: 0px;
       width: 100%; }
@@ -343,34 +344,11 @@ h3 {
         background-clip: padding-box; }
     .nav-bar a {
       width: auto;
-      padding-right: 100%; }
-      .nav-bar a:hover {
-        background-color: #f8f8f8; }
+      padding-right: 100%;
+      font-size: 1.25em; }
+      .nav-bar a:first-child {
+        padding-left: 1em; }
 
-  /*
-  	.nav-bar li{
-        float: left;
-        font-size: 1.5em;
-        border-bottom: 0;
-  	  clear: both;
-  	  width:100%;
-  	  display: block; }
-  	.nav-bar ul {
-  	  	border: 0px;
-  	  	width:100%;
-  		&:first-child {
-  			@include round-corner(0);
-  		}
-  	}
-  	.nav-bar a{
-  	  width:auto;
-  	  padding-right:100%;
-  	}
-  	.nav-bar a:hover {
-  	   //background-color: #E8E2D8;
-  	   background-color: $navbar_background_hover;
-  	}
-  */
   .background_image {
     background-image: url(../images/index_background_mobile2.jpg);
     background-repeat: no-repeat;

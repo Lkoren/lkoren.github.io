@@ -30,54 +30,39 @@
 	background-clip: padding-box;
 }
 
-////
-@include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
-@include font-face('OstrichSans-Black','./fonts/Ostrich/Ostrich-Black/OstrichSans-Black', 'OstrichSans-Black');
-@include font-face('raleway-regular', './fonts/Raleway/Raleway-regular/Raleway-Regular', 'Raleway-Regular');
-@include font-face('raleway-light', './fonts/Raleway/Raleway-light/raleway-light', 'raleway-light');
-
-////
-$nav-bar-beige: #D6D6C2;
+@mixin blur($radius) {
+	-webkit-filter: blur($radius);
+	-moz-filter: blur($radius);
+	-o-filter: blur($radius);
+	-ms-filter: blur($radius);
+	filter: blur($radius);
+}
 $white: #FFFFFF;
 $content-border: #BBBBBB;
 $infobox-background: #fDfDfD;
 $hyperlink: #663333;
 $hyperlink_underline: #996666;
 $hyperlink_hover: #bb9999;
+$nav-bar-beige: #D6D6C2;
 $titleBar_h1: #776666;
 $titleBar_h1_darker: #443333;
 $navbar_background_hover: #f8f8f8;
+$tablet-max: 759px;
+$tablet-min: 520px;
+
+////
+@include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
+@include font-face('OstrichSans-Black','./fonts/Ostrich/Ostrich-Black/OstrichSans-Black', 'OstrichSans-Black');
+@include font-face('raleway-regular', './fonts/Raleway/Raleway-regular/Raleway-Regular', 'Raleway-Regular');
+@include font-face('raleway-light', './fonts/Raleway/Raleway-light/raleway-light', 'raleway-light');
+
+
 
 @media all and (min-width: 520px) {
 	.titlebar_image {
 		width: 1200px;
 		height: 80px;
 		background-image: url(../images/banner/life_banner_Revised_1200_fa.jpg);
-	}
-}
-
-
-body{
-	font-size: 62.5%;
-	text-rendering: optimizeLegibility;
-}
-
-
-
-.content-container{
-	width:90%;
-	height: 610px;
-	/*height:auto;*/
-	padding-bottom:90px;
-	margin:auto;
-	margin-top: 2em;
-	position: relative;
-	//border-style: dashed;
-	position:relative;
-	}
-.doc-container {
-	.main-page {
-		height: 610px
 	}
 }
 
@@ -90,7 +75,9 @@ body{
 	line-height: 1.25em;
 	h1 {
 		font-size: 3em;
-		font-family: 'ostrich-rounded';
+		//font-family: 'ostrich-rounded';
+		line-height:30px;
+		font-family: 'OstrichSans-Black';
 		color: $titleBar_h1;
 		position: absolute;
 		font-size:3.0em;
@@ -160,91 +147,38 @@ body{
 
  /*************************/
  //Tablet format
-@media screen and (max-width: 759px)and (min-width: 520px) {
-	body{
-		width:100%;
-		p {
-			font-family: 'raleway-regular';
-		}
-	}
+@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
 	.nav-bar {
 		width: 100%;
-	  display:block;
-	  font-size:130%;
-	  padding-left: 2em;
-	  position: relative;
-	  float: none;
-	  left:0%;
-	  margin:auto;
-	  position:relative;
-	  top:0px;
-	  @include round-bottom(0,0);
-	  ul{
-  	  	float: left;
-		&:first-child{
-			@include round-corner(0);
-   		}
-	  }
-	li {
-		float: left;
-		font-size: 1.5em;
-		border-bottom: 0;
-		padding-right: 1em;
-		}
-	}
-	/*
-	.nav-bar, .nav-bar ul {
-      //float: left;
-  	}
-	.nav-bar ul {
-      float: left;
-  	}
-
-	.nav-bar li {
-      float: left;
-      font-size: 1.5em;
-      border-bottom: 0;
-      padding-right: 1em;
-  }*/
-	.background_image {
-		background-image: url(../images/index_background_800square_flipped.jpg);
-		background: $white top right no-repeat fixed;
+		display:block;
+		font-size:130%;
+		padding-left: 2em;
 		position: relative;
-		widows: 100%;
-		z-index: 0;
-
-		-webkit-filter: blur(5px);
-		-moz-filter: blur(5px);
-		-o-filter: blur(5px);
-		-ms-filter: blur(5px);
-		filter: blur(5px);
-	}
-	.content-container{
-		width:100%;
+		float: none;
+		left:0%;
 		margin:auto;
-		border: 1px solid;
-		//background: $white top right no-repeat fixed;
-		//background-image: url(../images/index_background_800square_flipped.jpg);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		position: relative;
-		border-left:none;
-		border-bottom:thin;
-		border-color: $content-border;
-		border-left-style: none;
-		border-bottom-style:solid;
-		border-right:none;
-		float: left;
 		position:relative;
-		@include round-bottom(0, 0)
+		top:0px;
+		@include round-bottom(0,0);
+		ul{
+		  	float: left;
+			&:first-child {
+				@include round-corner(0);
+			}
 		}
-
-
+		li {
+			float: left;
+			font-size: 1.5em;
+			border-bottom: 0;
+			padding-right: 1em;
+			}
+		}
 	.titleBar h1{
 		font-size:2.25em;
 		top:1.5em;
 		left:1.5em;
 		color: $titleBar_h1_darker;
+		line-height: 22px;
 	}
 }
 //////////////////////
@@ -300,56 +234,14 @@ body{
 			}
 		}
 	  }
-	$content-container-height: 680px;
-	.background_image {
-		background-image: url(../images/index_background_mobile2.jpg);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		position: relative;
-		widows: 100%;
-		height: $content-container-height;
-		z-index: 0;
-		-webkit-filter: blur(5px);
-		-moz-filter: blur(5px);
-		-o-filter: blur(5px);
-		-ms-filter: blur(5px);
-		filter: blur(5px);
-	}
-	.content-container{
-		width:100%;
-		height: $content-container-height;
-		margin:auto;
-		border: 1px solid;
-		background: $white top left no-repeat fixed;
-		//background-image: url(../images/index_background_mobile2.jpg);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		position: relative;
-		border-left:none;
-		border-right:none;
-		border-bottom:thin;
-		border-left-style: none;
-		border-bottom-style:solid;
-		border-right:none;
-		border-color: $content-border;
-		border-bottom-color: $white;
-		float: left;
-		padding-bottom:30px;
-		position:relative;
-		@include round-bottom(0, 0);
-	}
 	.titleBar h1{
 		font-size:2.0em;
 		top:1.35em;
-		left:1.1em; 	}
+		left:1.1em;
+		line-height: 20px;
+	}
 }
 @media screen and (min-width: 1335px) {
-	.content-container{
-		width:1200px;	}
-	.doc-container{
-		width:1200px;
-		margin-left:auto;
-		margin-right:auto;}
 	.nav-bar{
 		position:relative;
 		right:0%;
@@ -359,8 +251,5 @@ body{
 			float:right;
 		}
 	}
-	.nav-bar, .nav-bar ul{
-
-		}
 }
 

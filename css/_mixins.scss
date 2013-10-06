@@ -33,3 +33,20 @@
 	-ms-filter: blur($radius);
 	filter: blur($radius);
 }
+
+@mixin body-text-style{
+	font-family: 'raleway-regular';
+	font-size: 1.6em;
+	line-height: 1.4em;
+}
+@mixin body-hyperlink-style{
+	text-decoration: none;
+	color: $hyperlink;
+	border-bottom-color: $hyperlink_underline;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	&:hover{
+		color: $hyperlink_hover;
+		border-bottom-color: $hyperlink_hover;
+	}
+}

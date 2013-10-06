@@ -1,9 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 @import "reset";
-@import "liavkoren_header";
+@import "header";
 @import "mixins";
 @import "variables";
+@import "syntax";
 ////Mixins:
 
 
@@ -18,25 +19,81 @@
 body{
 	font-size: 62.5%;
 	text-rendering: optimizeLegibility;
-	h2 {
-		font-family: 'ostrich-rounded';
-		font-size: 4.0em;
-		line-height: 1.5em;
+	.date{
+		float: right;
+		padding-left:100%;
 	}
-	p {
-		//font-family: 'raleway-light';
-		font-family: 'raleway-regular';
-		font-size: 1.6em;
-		line-height: 1.25em;
+	.info-box {
+		h1 {
+			font-size: 3em;
+			font-family: 'ostrich-rounded';
+		}
+		h2 {
+			font-family: 'ostrich-rounded';
+			font-size: 4.0em;
+			line-height: 1.5em;
+		}
+		h3 {
+			font-family: 'ostrich-rounded';
+			font-size: 2.7em;
+			line-height: 1.25em;
+		}
+		h4 {
+			font-family: 'ostrich-rounded';
+			font-size: 2em;
+			line-height: 1em;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+		}
+		p {
+			@include body-text-style;
+		}
+		ul{
+			@include body-text-style;
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-left: 1.7em;
+			padding-bottom: 1.5em;
+			line-height: 1.5em;
+			li {
+				text-indent: -0.9em;
+			}
+			a{
+				@include body-hyperlink-style;
+			}
+			&.short{
+				padding-bottom: 0.15em;
+			}
+		}
+		.bullet:before{
+			content: "ỽ ";
+			color: $bullet-color;
+			@include body-text-style;
+			display: inline-block;
+			text-decoration:none;
+			@include body-text-style;
+		}
+		pre {
+			@include body-text-style;
+			line-height: 1.25em;
+			background-color: rgb(0, 43, 54);
+			border-left-color: rgb(5, 35, 43);
+			display: block;
+			word-break: break-all;
+			word-wrap: break-word;
+		}
 	}
+
 }
 
-ul{
-list-style: none; }
+/*ul{
+list-style: none; } */
 p {
-font-size: 1.6em; }
+//font-size: 1.6em;
+}
 h3{
-	font-size: 2em;}
+	font-size: 2em;
+}
 
 .content-container{
 	width:90%;
@@ -83,18 +140,9 @@ h3{
 		padding-bottom: 1.5em;
 		line-height: 1.4em;
 		a {
-			text-decoration: none;
-			color: $hyperlink;
-			border-bottom-color: $hyperlink_underline;
-			border-bottom-style: dotted;
-			border-bottom-width: 1px;
-			&:hover{
-				color: $hyperlink_hover;
-				border-bottom-color: $hyperlink_hover;
-			}
+			@include body-hyperlink-style
 		}
 	}
-
 }
 
 

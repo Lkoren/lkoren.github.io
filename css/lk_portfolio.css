@@ -1,40 +1,0 @@
-/*
-Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
-        on line 38 of lk_portfolio.css
-
-33: /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'
-34: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'
-35: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'
-36: *\/
-37: body:before {
-38:   white-space: pre;
-39:   font-family: monospace;
-40:   content: "Syntax error: The line was indented 2 levels deeper than the previous line.\A         on line 35 of lk_portfolio.css\A \A 30: 	position:absolute;\A 31: 	top:141px;\A 32: 	right:5%;}\A 33: \A 34: .gallery#thumbnails img{\A 35: 		max-width:100%;\A 36: }\A 37: .gallery a {\A 38: 	clear:both;\A 39: 	display: block;\A 40: 	}"; }
-
-Backtrace:
-lk_portfolio.css:38
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:424:in `block in tabulate'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `each'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `each_with_index'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `tabulate'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:345:in `_to_tree'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:235:in `watch'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/plugin.rb:107:in `method_missing'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:455:in `watch_or_update'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:318:in `process_result'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:41:in `parse'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/exec.rb:21:in `parse!'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 38 of lk_portfolio.css\A \A 33: /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'\A 34: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'\A 35: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'\A 36: */\A 37: body:before {\A 38:   white-space: pre;\A 39:   font-family: monospace;\A 40:   content: \"Syntax error: The line was indented 2 levels deeper than the previous line.\A         on line 35 of lk_portfolio.css\A \A 30: 	position:absolute;\A 31: 	top:141px;\A 32: 	right:5%;}\A 33: \A 34: .gallery#thumbnails img{\A 35: 		max-width:100%;\A 36: }\A 37: .gallery a {\A 38: 	clear:both;\A 39: 	display: block;\A 40: 	}\"; }"; }

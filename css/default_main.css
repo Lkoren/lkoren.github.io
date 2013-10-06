@@ -1,41 +1,22 @@
 /*
-Syntax error: Invalid CSS after "0": expected expression (e.g. 1px, bold), was ";"
-        on line 9 of default_main.css
+Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
+        on line 57 of default_main.css
 
-4: /*
-5: /*****************************************************************************\/
-6: 
-7: /* Global Reset *\/
-8: * {
-9:   margin: 0;
-10:   padding: 0;
-11: }
-12: 
-13: html, body { height: 100%; }
-14: 
+52: /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'
+53: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'
+54: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'
+55: *\/
+56: body:before {
+57:   white-space: pre;
+58:   font-family: monospace;
+59:   content: "Syntax error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \";\"\A         on line 9 of default_main.css\A \A 4: /*\A 5: /*****************************************************************************\/\A 6: \A 7: /* Global Reset *\/\A 8: * {\A 9:   margin: 0;\A 10:   padding: 0;\A 11: }\A 12: \A 13: html, body { height: 100%; }\A 14: "; }
 
 Backtrace:
-default_main.css:9
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/scss/parser.rb:1145:in `expected'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/lexer.rb:199:in `expected!'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:486:in `assert_done'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:50:in `parse'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script/parser.rb:166:in `parse'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/script.rb:31:in `parse'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:880:in `parse_script'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:608:in `parse_property'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:597:in `parse_property_or_rule'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:578:in `parse_line'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:471:in `build_tree'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:490:in `block in append_children'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `each'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `append_children'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:480:in `block in build_tree'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:473:in `each'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:473:in `build_tree'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:490:in `block in append_children'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `each'
-/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:489:in `append_children'
+default_main.css:57
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:424:in `block in tabulate'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `each'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `each_with_index'
+/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:382:in `tabulate'
 /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:345:in `_to_tree'
 /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
 /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
@@ -56,4 +37,4 @@ default_main.css:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"0\": expected expression (e.g. 1px, bold), was \";\"\A         on line 9 of default_main.css\A \A 4: /*\A 5: /*****************************************************************************/\A 6: \A 7: /* Global Reset */\A 8: * {\A 9:   margin: 0;\A 10:   padding: 0;\A 11: }\A 12: \A 13: html, body { height: 100%; }\A 14: "; }
+  content: "Syntax error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 57 of default_main.css\A \A 52: /home/liav/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.10/bin/sass:9:in `<top (required)>'\A 53: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `load'\A 54: /home/liav/.rvm/gems/ruby-2.0.0-p247/bin/sass:23:in `<main>'\A 55: */\A 56: body:before {\A 57:   white-space: pre;\A 58:   font-family: monospace;\A 59:   content: \"Syntax error: Invalid CSS after \\"0\\": expected expression (e.g. 1px, bold), was \\";\\"\A         on line 9 of default_main.css\A \A 4: /*\A 5: /*****************************************************************************/\A 6: \A 7: /* Global Reset */\A 8: * {\A 9:   margin: 0;\A 10:   padding: 0;\A 11: }\A 12: \A 13: html, body { height: 100%; }\A 14: \"; }"; }

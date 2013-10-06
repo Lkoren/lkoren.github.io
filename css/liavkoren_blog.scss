@@ -29,6 +29,23 @@
 	border-radius: #{$corner}px 0px 0px 0px;
 	background-clip: padding-box;
 }
+@mixin body-text-style{
+	//font-family: 'raleway-light';
+	font-family: 'raleway-regular';
+	font-size: 1.6em;
+	line-height: 1.25em;
+}
+@mixin body-hyperlink-style{
+	text-decoration: none;
+	color: $hyperlink;
+	border-bottom-color: $hyperlink_underline;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	&:hover{
+		color: $hyperlink_hover;
+		border-bottom-color: $hyperlink_hover;
+	}
+}
 
 ////
 @include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
@@ -61,18 +78,74 @@ body{
 	font-size: 62.5%;
 	text-rendering: optimizeLegibility;
 	h1 {
-		font-family: 'OstrichSans-Black';
+		font-size: 3em;
+		//font-family: 'OstrichSans-Black';
+		font-family: 'ostrich-rounded';
+	}
+	.date{
+		float: right;
+		padding-left:100%;
 	}
 	h2 {
 		font-family: 'ostrich-rounded';
 		font-size: 4.0em;
 		line-height: 1.5em;
 	}
+	h3 {
+		font-family: 'ostrich-rounded';
+		font-size: 2.7em;
+		line-height: 1.25em;
+	}
+	h4 {
+		font-family: 'ostrich-rounded';
+		font-size: 2em;
+		line-height: 1em;
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+	}
 	p {
+		/*
 		//font-family: 'raleway-light';
 		font-family: 'raleway-regular';
 		font-size: 1.6em;
-		line-height: 1.25em;
+		line-height: 1.25em;  */
+		@include body-text-style;
+	}
+	ul{
+		@include body-text-style;
+		list-style-position: outside;
+		list-style-type: disc;
+		margin-left: 1.7em;
+		padding-bottom: 1.5em;
+		line-height: 1.5em;
+		li {
+			text-indent: -0.9em;
+		}
+		a{
+			@include body-hyperlink-style;
+		}
+		&.short{
+			padding-bottom: 0.15em;
+		}
+	}
+	.bullet:before{
+		content: "ỽ ";
+		@include body-text-style;
+		color: rgb(242, 242, 242);
+		display: inline-block;
+		text-decoration:none;
+		@include body-text-style;
+	}
+	pre {
+		@include body-text-style;
+		background-color: rgb(0, 43, 54);
+		border-left-color: rgb(5, 35, 43);
+		display: block;
+		word-break: break-all;
+		word-wrap: break-word;
+		&.nt {
+
+		}
 	}
 }
 
@@ -130,6 +203,8 @@ h3{
 		padding-bottom: 1.5em;
 		line-height: 1.4em;
 		a {
+			@include body-hyperlink-style
+			/*
 			text-decoration: none;
 			//text-decoration-style: dotted;
 			color: $hyperlink;
@@ -139,7 +214,7 @@ h3{
 			&:hover{
 				color: $hyperlink_hover;
 				border-bottom-color: $hyperlink_hover;
-			}
+			}*/
 		}
 	}
 

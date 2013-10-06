@@ -29,23 +29,6 @@
 	border-radius: #{$corner}px 0px 0px 0px;
 	background-clip: padding-box;
 }
-@mixin body-text-style{
-	//font-family: 'raleway-light';
-	font-family: 'raleway-regular';
-	font-size: 1.6em;
-	line-height: 1.25em;
-}
-@mixin body-hyperlink-style{
-	text-decoration: none;
-	color: $hyperlink;
-	border-bottom-color: $hyperlink_underline;
-	border-bottom-style: dotted;
-	border-bottom-width: 1px;
-	&:hover{
-		color: $hyperlink_hover;
-		border-bottom-color: $hyperlink_hover;
-	}
-}
 
 ////
 @include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
@@ -64,7 +47,6 @@ $hyperlink_hover: #bb9999;
 $titleBar_h1: #776666;
 $titleBar_h1_darker: #443333;
 $navbar_background_hover: #f8f8f8;
-$bullet-color: #554444;
 
 @media all and (min-width: 520px) {
 	.titlebar_image {
@@ -78,79 +60,9 @@ $bullet-color: #554444;
 body{
 	font-size: 62.5%;
 	text-rendering: optimizeLegibility;
-	h1 {
-		font-size: 3em;
-		//font-family: 'OstrichSans-Black';
-		font-family: 'ostrich-rounded';
-	}
-	.date{
-		float: right;
-		padding-left:100%;
-	}
-	h2 {
-		font-family: 'ostrich-rounded';
-		font-size: 4.0em;
-		line-height: 1.5em;
-	}
-	h3 {
-		font-family: 'ostrich-rounded';
-		font-size: 2.7em;
-		line-height: 1.25em;
-	}
-	h4 {
-		font-family: 'ostrich-rounded';
-		font-size: 2em;
-		line-height: 1em;
-		padding-top: 0.2em;
-		padding-bottom: 0.2em;
-	}
-	p {
-		/*
-		//font-family: 'raleway-light';
-		font-family: 'raleway-regular';
-		font-size: 1.6em;
-		line-height: 1.25em;  */
-		@include body-text-style;
-	}
-	ul{
-		@include body-text-style;
-		list-style-position: outside;
-		list-style-type: disc;
-		margin-left: 1.7em;
-		padding-bottom: 1.5em;
-		line-height: 1.5em;
-		li {
-			text-indent: -0.9em;
-		}
-		a{
-			@include body-hyperlink-style;
-		}
-		&.short{
-			padding-bottom: 0.15em;
-		}
-	}
-	.bullet:before{
-		content: "ỽ ";
-		color: $bullet-color;
-		@include body-text-style;
-		display: inline-block;
-		text-decoration:none;
-		@include body-text-style;
-	}
-	pre {
-		@include body-text-style;
-		background-color: rgb(0, 43, 54);
-		border-left-color: rgb(5, 35, 43);
-		display: block;
-		word-break: break-all;
-		word-wrap: break-word;
-	}
 }
 
-p {
-font-size: 1.6em; }
-h3{
-	font-size: 2em;}
+
 
 .content-container{
 	width:90%;
@@ -159,79 +71,32 @@ h3{
 	padding-bottom:90px;
 	margin:auto;
 	margin-top: 2em;
-	border: 0.5px solid;
-	background: $white top right no-repeat fixed;
-	background-image: url(../images/index_background_800square_flipped.jpg);
-	img {
-		float: right;
-	}
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	position: relative;
-	border:thin;
 	//border-style: dashed;
-	border-style: solid;
-	border-color: $content-border;
 	position:relative;
-	@include round-bottom(0, 30) //fits a moz bug
 	}
 .doc-container {
 	.main-page {
 		height: 610px
 	}
 }
-.info-box{
-	position:relative;
-	height: auto;
-	width: 46em;
-	left: 5%;
-	opacity: 0.9;
-	background-color: $infobox-background;
-	border-color: $content-border;
-	@include round-bottom(5,20);
-	border-width:thin;
-	border-style: dotted;
-	padding: 50px;
-	padding-right: 40px;
-	padding-bottom: 10px;
-	top: 75px;
-	p{
-		padding-bottom: 1.5em;
-		line-height: 1.4em;
-		a {
-			@include body-hyperlink-style
-			/*
-			text-decoration: none;
-			//text-decoration-style: dotted;
-			color: $hyperlink;
-			border-bottom-color: $hyperlink_underline;
-			border-bottom-style: dotted;
-			border-bottom-width: 1px;
-			&:hover{
-				color: $hyperlink_hover;
-				border-bottom-color: $hyperlink_hover;
-			}*/
-		}
-	}
 
-}
 .titleBar{
 	overflow: hidden;
 	background-repeat: no-repeat;
 	border-bottom-width:thin;
 	border-bottom-style:dotted;
 	height: 80px;
+	line-height: 1.25em;
 	h1 {
+		font-size: 3em;
+		font-family: 'ostrich-rounded';
 		color: $titleBar_h1;
 		position: absolute;
 		font-size:3.0em;
 		top:0.95em;
 		left:1.5em;
 	}
-	ul{
-		list-style: none;
-	}
-
 }
 .nav-bar {
 	$nav-bar-height: 25px;  ////ToDo: 25px in chrome better, 28 in FF. Garg. Why?
@@ -315,21 +180,32 @@ h3{
 	  top:0px;
 	  @include round-bottom(0,0);
 	  ul{
+  	  	float: left;
 		&:first-child{
 			@include round-corner(0);
    		}
 	  }
+	li {
+		float: left;
+		font-size: 1.5em;
+		border-bottom: 0;
+		padding-right: 1em;
+		}
 	}
+	/*
 	.nav-bar, .nav-bar ul {
-      float: left;}
+      //float: left;
+  	}
 	.nav-bar ul {
-      float: left; }
+      float: left;
+  	}
+
 	.nav-bar li {
       float: left;
       font-size: 1.5em;
       border-bottom: 0;
       padding-right: 1em;
-  }
+  }*/
 	.background_image {
 		background-image: url(../images/index_background_800square_flipped.jpg);
 		background: $white top right no-repeat fixed;
@@ -363,32 +239,7 @@ h3{
 		@include round-bottom(0, 0)
 		}
 
-	.info-box{
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		position: absolute;
-		height: 620px;
-		width:100%;
-		left: 0%;
-		margin:auto;
-		opacity: 0.8;
-		background-color: #fff;
-		border-width: thin;
-		border-style: dotted;
-		border-bottom: none;
-		border-left: none;
-		padding-left: 3em;
-		padding-right:3em;
-		//padding-bottom: 3%;
-		padding-bottom: 0px;
-		float:none;
-		top: 80px;
-		filter: none;
-		-webkit-filter: blur(0px);
-		-moz-filter: blur(0px);
-		-ms-filter: blur(0px);
-		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
-		/*overflow: none;*/}
+
 	.titleBar h1{
 		font-size:2.25em;
 		top:1.5em;
@@ -402,11 +253,6 @@ h3{
 	.titlebar_image {
 		background-image: none;
 		border-color: $white;
-	}
-	body{
-		p {
-			font-family: 'raleway-regular';
-		}
 	}
 	.nav-bar{
 		display:block;
@@ -492,36 +338,6 @@ h3{
 		position:relative;
 		@include round-bottom(0, 0);
 	}
-	.info-box{
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		position: absolute;
-		//height: 590px;
-		height:$content-container-height;
-		width:100%;
-		left: 0%;
-		margin:auto;
-		opacity: 0.65;
-		//background-color: #FFC;
-		background-color: $infobox-background;
-		border-width: thin;
-		border-style: dotted;
-		border-bottom: none;
-		border-left: none;
-		border-right:none;
-		padding-left: 3em;
-		padding-right:3em;
-		padding-bottom: 3%;
-		float:none;
-		top: 80px;
-		@include round-bottom(0,0);
-		z-index: 100;
-		filter: none;
-		-webkit-filter: blur(0px);
-		-moz-filter: blur(0px);
-		-ms-filter: blur(0px);
-		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
-		/*overflow: none;*/}
 	.titleBar h1{
 		font-size:2.0em;
 		top:1.35em;
@@ -530,8 +346,6 @@ h3{
 @media screen and (min-width: 1335px) {
 	.content-container{
 		width:1200px;	}
-	.info-box{
-		width: 55em;}
 	.doc-container{
 		width:1200px;
 		margin-left:auto;
@@ -540,9 +354,13 @@ h3{
 		position:relative;
 		right:0%;
 		top:-645px;
-		float:right;}
-	.nav-bar, .nav-bar ul{
 		float:right;
+		ul {
+			float:right;
+		}
+	}
+	.nav-bar, .nav-bar ul{
+
 		}
 }
 

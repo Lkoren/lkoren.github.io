@@ -88,7 +88,14 @@ Currently, state is communicated to the user by the color of the rendered previe
   }
 {% endhighlight %}
 
-This allows me to update the message state and text color with `update_text_color(message_state[message_state.current_state])` which I thought was a nice, clean way of packaging both state and the information that travels with it.
+This allows me to update the message state and text color with
+
+{% highlight javascript %}
+update_text_color(
+   message_state[message_state.current_state])
+{% endhighlight %}
+
+which I thought was a nice, clean way of packaging both state and the information that travels with it.
 
 [cut?]
 As I was working on this element of the UI I got to the point were I wanted update in real-time with user changes. This is one of those things that seems like it should be straight forward, but can actually be fairly tricky. If you attach a `onChange` or jQuery `.change` listener to a form element, it only fires `onBlur.` You actually need to bind to `.keyup`, and even that won't catch things like cut and paste. I ended up using a jQuery plugin from [zerb.com](http://zurb.com/playground/jquery-text-change-custom-event) that deals with the issue, and was very happy with it.

@@ -35,19 +35,23 @@
 	font-size: 1.35em;
 	clear: left;
 	position: absolute;
-	right:5%;
-	float: left;
+	//right:5%;
+	right: 0%;
+	//float: left;
+	//float: right;
 	opacity:0.8;
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 	height: $nav-bar-height;
-	top:77px;
+	//top:77px;
+	top:4.1em;
 	@include round-corner(25);
 	h3 {
 		position: absolute;
    		left: -999em;
 	}
 	ul{
-   		float: left;
+   		//float: left;
+		float: right;
    		height: $nav-bar-height;
 		overflow: hidden; // http://msdn.microsoft.com/en-us/magazine/dn201719.aspx
 		&:first-child{  ////ToDo: why doesn't hover + first child work?
@@ -103,6 +107,7 @@
 		position:relative;
 		top:0px;
 		@include round-bottom(0,0);
+		z-index: 100;
 		ul{
 		  	float: left;
 			&:first-child {
@@ -110,7 +115,7 @@
 			}
 		}
 		li {
-			float: left;
+			float: right;
 			font-size: 1.5em;
 			border-bottom: 0;
 			padding-right: 1em;
@@ -188,7 +193,7 @@
 	.nav-bar{
 		position:relative;
 		right:0%;
-		top:-645px;
+		top:-1.85em;
 		float:right;
 		ul {
 			float:right;

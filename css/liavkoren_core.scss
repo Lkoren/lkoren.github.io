@@ -86,18 +86,14 @@ body{
 
 }
 
-/*ul{
-list-style: none; } */
-p {
-//font-size: 1.6em;
-}
 h3{
-	font-size: 2em;
+//	font-size: 2em;
 }
 
 .content-container{
 	width:90%;
-	height: 610px;
+	//height: 610px;
+	height: auto;
 	padding-bottom:90px;
 	margin:auto;
 	margin-top: 2em;
@@ -145,7 +141,6 @@ h3{
 	}
 }
 
-
  /*************************/
  //Tablet format
 @media screen and (max-width: 759px)and (min-width: 520px) {
@@ -154,21 +149,31 @@ h3{
 		p {
 			font-family: 'raleway-regular';
 		}
+		.date{
+			padding-right: 1em;
+		}
 	}
-	.background_image {
-		background-image: url(../images/index_background_800square_flipped.jpg);
-		background: $white top right no-repeat fixed;
+	/*.background_image {
+		//background-image: url(../images/index_background_800square_flipped.jpg);
+		//background: $white top right no-repeat fixed;
+		height: 1000px;
 		position: relative;
 		widows: 100%;
 		z-index: 0;
 		@include blur(5px);
-	}
+	}*/
 	.content-container{
 		width:100%;
+		//height: 1000px;
+		height: auto;
 		margin:auto;
 		border: 1px solid;
-		background-repeat: no-repeat;
+		background: $white;
+		border-bottom: none;
+		/*background-repeat: no-repeat;
 		background-attachment: fixed;
+		background: $white top right no-repeat fixed;
+		background-image: url(../images/index_background_800square_flipped_tablet.jpg);*/
 		position: relative;
 		border-left:none;
 		border-bottom:thin;
@@ -181,30 +186,66 @@ h3{
 		@include round-bottom(0, 0)
 		}
 
-	.info-box{
+	.tablet_background {
 		box-sizing: border-box;
 		-moz-box-sizing: border-box;
-		position: absolute;
+		position: fixed;
 		height: 620px;
 		width:100%;
 		left: 0%;
 		margin:auto;
-		opacity: 0.8;
+		//opacity: 0.8;
+		opacity: 0.2;
+		background-color: #fff;
+		border-style: none;
+		padding-left: 3em;
+		padding-right:3em;
+		padding-bottom: 0px;
+		float:none;
+		top: 0px;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background: $white top right no-repeat fixed;
+		background-image: url(../images/index_background_800square_flipped_tablet.jpg);
+		filter: none;
+		-webkit-filter: blur(0px);
+		-moz-filter: blur(0px);
+		-ms-filter: blur(0px);
+		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
+	}
+	.info-box{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		position: absolute;
+		//height: 620px;
+		height: 100%;
+		width:100%;
+		left: 0%;
+		margin:auto;
+		//opacity: 0.8;
+		opacity: 1.0;
 		background-color: #fff;
 		border-width: thin;
 		border-style: dotted;
 		border-bottom: none;
+
 		border-left: none;
 		padding-left: 3em;
 		padding-right:3em;
 		padding-bottom: 0px;
 		float:none;
 		top: 80px;
+		/*
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background: $white top right no-repeat fixed;
+		background-image: url(../images/index_background_800square_flipped_tablet.jpg);
 		filter: none;
 		-webkit-filter: blur(0px);
 		-moz-filter: blur(0px);
 		-ms-filter: blur(0px);
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
+		*/
 	}
 }
 //////////////////////
@@ -224,11 +265,13 @@ h3{
 		widows: 100%;
 		height: $content-container-height;
 		z-index: 0;
+		//@include blur(5px)
 		-webkit-filter: blur(5px);
 		-moz-filter: blur(5px);
 		-o-filter: blur(5px);
 		-ms-filter: blur(5px);
 		filter: blur(5px);
+
 	}
 	.content-container{
 		width:100%;

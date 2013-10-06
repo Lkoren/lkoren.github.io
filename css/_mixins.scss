@@ -1,0 +1,35 @@
+@mixin font-face($family, $path, $svg, $weight: normal, $style: normal) {
+  @font-face {
+	font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+	}
+}
+
+@mixin round-bottom($top-radius, $bottom-radius) {
+	-webkit-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
+	/* Firefox 1-3.6 */
+	-moz-border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: #{$top-radius}px #{$top-radius}px #{$bottom-radius}px #{$bottom-radius}px;
+	background-clip: padding-box;
+}
+
+@mixin round-corner($corner) {
+	-webkit-border-radius: #{$corner}px 0px 0px 0px;
+	/* Firefox 1-3.6 */
+	-moz-border-radius: #{$corner}px 0px 0px 0px;
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: #{$corner}px 0px 0px 0px;
+	background-clip: padding-box;
+}
+
+@mixin blur($radius) {
+	-webkit-filter: blur($radius);
+	-moz-filter: blur($radius);
+	-o-filter: blur($radius);
+	-ms-filter: blur($radius);
+	filter: blur($radius);
+}

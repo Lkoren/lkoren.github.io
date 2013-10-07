@@ -219,7 +219,6 @@ input, select {
     width: 100%;
     right: auto;
     left: auto;
-    top: 50px;
     position: relative;
     font-size: 130%;
     padding-left: 2em;
@@ -655,6 +654,12 @@ body {
         color: #bb9999;
         border-bottom-color: #bb9999; }
 
+.phone_menu {
+  display: none; }
+
+.header_menu {
+  display: block; }
+
 /*************************/
 @media screen and (max-width: 759px) and (min-width: 520px) {
   body {
@@ -664,15 +669,6 @@ body {
     body .date {
       padding-right: 1em; }
 
-  /*.background_image {
-  	//background-image: url(../images/index_background_800square_flipped.jpg);
-  	//background: $white top right no-repeat fixed;
-  	height: 1000px;
-  	position: relative;
-  	widows: 100%;
-  	z-index: 0;
-  	@include blur(5px);
-  }*/
   .content-container {
     width: 100%;
     height: auto;
@@ -680,10 +676,6 @@ body {
     border: 1px solid;
     background: white;
     border-bottom: none;
-    /*background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: $white top right no-repeat fixed;
-    background-image: url(../images/index_background_800square_flipped_tablet.jpg);*/
     position: relative;
     border-left: none;
     border-bottom: thin;
@@ -754,8 +746,14 @@ body {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
     -ms-filter: blur(0px);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
-    */ } }
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+    */ }
+
+  .phone_menu {
+    display: none; }
+
+  .header_menu {
+    display: block; } }
 @media screen and (max-width: 519px) {
   body p {
     font-family: 'raleway-regular'; }
@@ -832,7 +830,29 @@ body {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
     -ms-filter: blur(0px);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); } }
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); }
+
+  .phone_menu {
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: 0px; }
+
+  .header_menu {
+    display: none; }
+
+  body {
+    height: 100%; }
+    body .main-page {
+      height: 100%; }
+    body .content-container {
+      height: 100%; }
+    body .info-box {
+      height: 100%; }
+
+  .empty {
+    clear: both;
+    height: 100%; } }
 @media screen and (min-width: 1335px) {
   .content-container {
     width: 1200px; }
@@ -843,4 +863,10 @@ body {
   .doc-container {
     width: 1200px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+
+  .phone_menu {
+    display: none; }
+
+  .header_menu {
+    display: block; } }

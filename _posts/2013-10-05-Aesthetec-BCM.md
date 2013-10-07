@@ -1,6 +1,6 @@
 ---
-layout: blog_entry
-title: Aesthetec
+layout: blog_entry2
+title: A Custom Full-Stack solution for Aesthetec Studios
 ---
 
 # Baylor College // Custom LED solution.
@@ -97,11 +97,9 @@ update_text_color(
 
 which I thought was a nice, clean way of packaging both state and the information that travels with it.
 
-[cut?]
 As I was working on this element of the UI I got to the point were I wanted update in real-time with user changes. This is one of those things that seems like it should be straight forward, but can actually be fairly tricky. If you attach a `onChange` or jQuery `.change` listener to a form element, it only fires `onBlur.` You actually need to bind to `.keyup`, and even that won't catch things like cut and paste. I ended up using a jQuery plugin from [zerb.com](http://zurb.com/playground/jquery-text-change-custom-event) that deals with the issue, and was very happy with it.
 
 One thing could definitely stand to be refactored in the current code is the way I'm binding listners to the text fields. When the user selects a different saved message from the list of preset messages, the new message strings are AJAX'd off the server and jQuery'd into the page, which overall I'm very happy with. At the end of the process, though, the listeners need to be rebound to the text fields -- this could likely be avoided by a more careful targetting of parent elements that aren't replaced.
-[cut? ]
 
 What I do like about the system is the way it meshes with the server-side templates. Templates are setup as outer and inner files. Outer contains both the header and footer html, up to the `<OL>` tags:
 
@@ -152,7 +150,7 @@ When a user decides to publish a message a whole cascade of things happen. The m
   return pixel_arrays
 {% endhighlight %}
 
-At the end of the process we also render out a check.txt file which has a human-readable base two version of the bit-frame (how often do the phrases "human readable" and "base two" appear in the same sentence?). My favorite line of code in the project lives in this check method. (Un?)fortunately(??) it has been slightly watered down, the victim(??) of a late-in-the-game streamlining of the datastrucutres. Initially we'd been constructing the bitframes at as multidimensional arrays. We finally settled on a flat array of longs, which meant that the list comprehension that generated the check.txt file also suffered a streamlining. For perversity's sake I'm archiving here the original version:
+At the end of the process we also render out a check.txt file which has a human-readable base two version of the bit-frame (how often do the phrases "human readable" and "base two" appear in the same sentence?). My favorite line of code in the project lives in this check method. (Un?)fortunately(??) it has been slightly watered down, the victim(??) of a late-in-the-game streamlining of the datastructures. Initially we'd been constructing the bitframes at as multidimensional arrays. We finally settled on a flat array of longs, which meant that the list comprehension that generated the check.txt file also suffered a streamlining. For perversity's sake I'm archiving here the original version:
 
 {% highlight python %}
   [newRow.append(bin(num)[2:].zfill(32)) for num in row]
@@ -162,46 +160,6 @@ At the end of the process we also render out a check.txt file which has a human-
 > onto newRow.
 
 The result, once you've set line breaks correcly, is a nice, modern, high-performance/high-design TrueType font rendered down into binary ASCII banner art.
-
-
-
-
-
-
-
-[cut?]
-- generating and rendering strings:
-
-function generate_preview_strings(msg){
-  var message_text = []
-  msg.forEach(function(obj) {
-  //requires ECMA5: http://stackoverflow.com/questions/921789/how-to-loop-through-javascript-object-literal-with-objects-as-members
-    Object.keys(obj).forEach(function(key) {
-      if (key !== "font") {
-        var line_text = obj[key]
-        line_text.forEach(function(line) {
-          obj.font === "large" ? render_preview_strings(line, "big_text") : render_preview_strings(line)
-          message_text.push(line + "\n")
-        })
-      }
-    })
-  })
-  return message_text.join("")
-}
-function render_preview_strings(str, text_size_id) {//strings should be raw lines of text. Mark-up is auto-escaped.
-  text_size_id = text_size_id || "small_text"
-  var e
-  e = str === "" ? $("<p></p>").html("<br/>") : $("<p></p>").text(str).attr("id", text_size_id)
-  e.attr("id", text_size_id)
-  $("#right_column_inner").append(e)
-}
-[cut?]
-
-
-
-
-
-
 
 #### References:
 [1] http://houston.culturemap.com/news/realestate/04-07-12-a-medical-turnaround-baylor-college-of-medicine-decides-what-to-do-with-its-glimmering-empty-hospital/

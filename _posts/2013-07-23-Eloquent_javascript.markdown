@@ -1,6 +1,6 @@
 ---
 layout: default
-
+title: Eloquent Javascript
 ---
 
 23 July 2013

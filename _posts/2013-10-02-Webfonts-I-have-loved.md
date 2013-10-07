@@ -1,6 +1,6 @@
 ---
-layout: default
-
+layout: blog_entry2
+title: Webfonts I have loved
 ---
 
 2 Oct 2013

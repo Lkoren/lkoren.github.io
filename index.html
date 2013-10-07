@@ -1,0 +1,23 @@
+---
+layout: blog_entry2
+title: Home page// v1.5
+---
+
+<h2>20 Sept 2013</h2>
+
+<p>This is the staging site for the most recent revision of my website (v1.5). You're welcome to look around, but things may break at any moment. The boring old stable version is at <a href="http://www.liavkoren.com">www.liavkoren.com</a>.</p>
+
+<p>I am a Toronto based Developer/Designer (D&D). As I mentioned I'm currently in the middle of doing Yet Another Revision (YAR) of this website, transitioning it to a much more modern webstack including Jekyll and SASS on the back-end. The layout and presentation of material is also undergoing a re-work as well.</p>
+
+<p>My most recent blog post, 'A Custom Full-Stack solution for Aesthetec Studios' has a relatively in-depth discussion of a recent project. That's what I would check out.</p>
+
+
+
+<div class="posts">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class = "bullet"><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

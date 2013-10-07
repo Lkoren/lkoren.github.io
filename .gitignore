@@ -1,2 +1,16 @@
 _site
-css/*.css
+issues.txt
+*.odt
+css/old/*
+_layouts/old/*
+old/
+scss/
+test/
+blog_removed/
+blog_removed
+blog_removed/*
+
+../blog_removed/
+../blog_removed
+../blog_removed/*
+

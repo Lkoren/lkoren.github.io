@@ -140,12 +140,6 @@ h3{
 		}
 	}
 }
-.phone_menu{
-	display: none;
-}
-.header_menu{
-	display: block;
-}
 
  /*************************/
  //Tablet format
@@ -239,12 +233,6 @@ h3{
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 		*/
 	}
-	.phone_menu{
-		display: none;
-	}
-	.header_menu{
-		display: block;
-	}
 }
 //////////////////////
 @media screen and (max-width: 519px) {
@@ -321,35 +309,6 @@ h3{
 		-ms-filter: blur(0px);
 		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0')
 	}
-
-	.phone_menu{
-		display: block;
-		position: absolute;
-		top:auto;
-		bottom: 0px;
-	}
-	.header_menu{
-		display: none;
-	}
-
-	body{
-		height: 100%;
-		.main-page{
-			height: 100%;
-		}
-		.content-container{
-			height: 100%;
-		}
-		.info-box{
-			height: 100%;
-		}
-	}
-
-	.empty{
-		clear: both;
-		height: 100%;
-	}
-
 }
 @media screen and (min-width: 1335px) {
 	.content-container{
@@ -360,12 +319,6 @@ h3{
 		width:1200px;
 		margin-left:auto;
 		margin-right:auto;
-	}
-	.phone_menu{
-		display: none;
-	}
-	.header_menu{
-		display: block;
 	}
 }
 

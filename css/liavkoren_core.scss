@@ -81,9 +81,42 @@ body{
 			display: block;
 			word-break: break-all;
 			word-wrap: break-word;
+			margin-bottom: 1em;
+		}
+		img{
+			padding-top: 0.5em;
+		}
+		.stroke{
+			img{
+				width: 100%;
+				border: #888888;
+				border-width: 1px;
+				border-style: dotted;
+				margin-bottom: 1em;
+			}
+
+		}
+		div.hero {
+			img{
+				padding-top:2em;
+				padding-bottom: 1em;
+			}
+		}
+		.image{
+			a {
+				max-width:550px;
+				display: block;
+				max-height: 100%;
+				height: auto;
+			}
+		}
+		#last { //SHAME: can't figure out how to get anchor to correct size without this.
+			height: 340px;
+		}
+		#references {
+			margin-top: 1em;
 		}
 	}
-
 }
 
 h3{
@@ -248,7 +281,7 @@ h3{
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		position: relative;
-		widows: 100%;
+		//widows: 100%;
 		height: $content-container-height;
 		z-index: 0;
 		//@include blur(5px)

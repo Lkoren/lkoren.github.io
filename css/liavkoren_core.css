@@ -591,7 +591,28 @@ body {
     border-left-color: #05232b;
     display: block;
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    margin-bottom: 1em; }
+  body .info-box img {
+    padding-top: 0.5em; }
+  body .info-box .stroke img {
+    width: 100%;
+    border: #888888;
+    border-width: 1px;
+    border-style: dotted;
+    margin-bottom: 1em; }
+  body .info-box div.hero img {
+    padding-top: 2em;
+    padding-bottom: 1em; }
+  body .info-box .image a {
+    max-width: 550px;
+    display: block;
+    max-height: 100%;
+    height: auto; }
+  body .info-box #last {
+    height: 340px; }
+  body .info-box #references {
+    margin-top: 1em; }
 
 .content-container {
   width: 90%;
@@ -751,7 +772,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    widows: 100%;
     height: 680px;
     z-index: 0;
     -webkit-filter: blur(5px);

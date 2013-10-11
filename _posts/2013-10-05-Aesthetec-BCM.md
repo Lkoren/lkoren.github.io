@@ -15,7 +15,7 @@ title: A Custom Full-Stack solution for Aesthetec Studios
 
 ### Intro
 
-This is a project I've been helping  [Mark Argo](www.argobot.com) of [Aesthetec Studio](www.aesthetec.net) on this year. Aesthetec specializes in interactive installations for art and exhibition contexts, which is an area I'm particularly interested in. It's been a treat working with them &mdash; they're great designers and Mark has impressive hardware design chops.
+This is a project I've been helping  [Mark Argo](http://www.argobot.com) of [Aesthetec Studio](http://www.aesthetec.net) on this year. Aesthetec specializes in interactive installations for art and exhibition contexts, which is an area I'm particularly interested in. It's been a treat working with them &mdash; they're great designers and Mark has impressive hardware design chops.
 
 ### Project Brief
 

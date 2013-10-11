@@ -62,33 +62,33 @@
 		height: $nav-bar-height;
 		float: left;
 		font-size: 1.5em;
+		padding-left: 2em;
+
+	}
+	.nav-current {
+		line-height: $navbar_line-height;
+		color: #122;
+		//padding-left: 1em;
+		//padding-left: 30px;
 	}
 	a {
 		height: $nav-bar-height;
 		display: inline; /*changed from block*/
-		padding: 0em 1em;
 		text-decoration: none;
-		color: #433;
-		line-height: 32px;
+		color: #655;
+		line-height: $navbar_line-height;
 
 		//
 		&:hover{
 			height: $nav-bar-height;
-			//padding-bottom:-1px;
 			padding-top: 6px;
 			background-color: $navbar_background_hover;
-			/*
-			&:first-child {
-				@include round-corner(30);
-			}*/
 		}
 		//
 		&:first-child {
-			padding-left: 30px;
+			//padding-left: 2em;
+
 		}
-	}
-	.nav-current {
-		//font-weight: bold;
 	}
 }
 

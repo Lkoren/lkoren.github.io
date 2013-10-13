@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+@import "reset";
+//@import "header";
+@import "nav-mobile";
+@import "mixins";
+@import "variables";
+@import "syntax";
+////Mixins:
+
+
+////
+@include font-face('ostrich-rounded', './fonts/Ostrich/Ostrich-Rounded/ostrich-rounded', 'ostrich-rounded');
+@include font-face('OstrichSans-Black','./fonts/Ostrich/Ostrich-Black/OstrichSans-Black', 'OstrichSans-Black');
+@include font-face('raleway-regular', './fonts/Raleway/Raleway-regular/Raleway-Regular', 'Raleway-Regular');
+@include font-face('raleway-light', './fonts/Raleway/Raleway-light/raleway-light', 'raleway-light');
+
+////
+
+body{
+	font-size: 62.5%;
+	text-rendering: optimizeSpeed;
+	.date{
+		float: right;
+		padding-left:100%;
+	}
+	p {
+		font-family: 'raleway-regular';
+	}
+	.info-box {
+		h1 {
+			font-size: 3em;
+			font-family: 'ostrich-rounded';
+		}
+		h2 {
+			font-family: 'ostrich-rounded';
+			font-size: 4.0em;
+			line-height: 1.5em;
+		}
+		h3 {
+			font-family: 'ostrich-rounded';
+			font-size: 2.7em;
+			line-height: 1.25em;
+		}
+		h4 {
+			font-family: 'ostrich-rounded';
+			font-size: 2em;
+			line-height: 1em;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+		}
+		p {
+			@include body-text-style;
+			padding-bottom: 1.5em;
+			line-height: 1.4em;
+			a {
+				@include body-hyperlink-style;
+			}
+		}
+		ul{
+			@include body-text-style;
+			list-style-position: outside;
+			list-style-type: disc;
+			margin-left: 1.7em;
+			padding-bottom: 1.5em;
+			line-height: 1.5em;
+			li {
+				text-indent: -0.9em;
+			}
+			a{
+				@include body-hyperlink-style;
+			}
+			&.short{
+				padding-bottom: 0.15em;
+			}
+		}
+		.bullet:before{
+			content: "ỽ ";
+			color: $bullet-color;
+			@include body-text-style;
+			display: inline-block;
+			text-decoration:none;
+			@include body-text-style;
+		}
+		pre {
+			@include body-text-style;
+			line-height: 1.25em;
+			background-color: rgb(0, 43, 54);
+			border-left-color: rgb(5, 35, 43);
+			display: block;
+			word-break: break-all;
+			word-wrap: break-word;
+			margin-bottom: 1em;
+		}
+		img{
+			padding-top: 0.5em;
+			max-width:100%
+		}
+		.stroke{
+			img{
+				width: 100%;
+				border: #888888;
+				border-width: 1px;
+				border-style: dotted;
+				margin-bottom: 1em;
+			}
+		}
+		div.hero {
+			img{
+				padding-top:2em;
+				padding-bottom: 1em;
+			}
+		}
+		.image{
+			a {
+				max-width:550px;
+				display: block;
+				max-height: 100%;
+				height: auto;
+			}
+		}
+		#last { //SHAME: can't figure out how to get anchor to correct size without this.
+			height: 340px;
+		}
+		#references {
+			margin-top: 1em;
+		}
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		width:100%;
+		position:relative;
+		height: auto;
+		left: 0%;
+		margin: auto;
+		opacity: 0.8;
+		background-color: $infobox-background;
+		border-color: $content-border;
+		border-width:thin;
+		border-style: dotted;
+		border-bottom: none;
+		border-left: none;
+		border-right:none;
+		padding-left: 3em;
+		padding-right:3em;
+		float: none;
+		top: 80px;
+		z-index: 100;
+	}
+}
+
+$content-container-height: 680px;
+
+.content-container{
+	width:100%;
+	height: auto;
+	margin:auto;
+	margin-top: 2em;
+	border: 1px solid;
+	border-color: $content-border;
+	border-left:none;
+	border-right:none;
+	border-bottom: none;
+	float: left;
+	background: $white top left no-repeat fixed;
+	img {
+		float: right;
+	}
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	//padding-bottom:30px;
+	float: left;
+	}
+.background_image {
+	background-image: url(../images/index_background_mobile2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	//widows: 100%;
+	height: $content-container-height;
+	z-index: 0;
+	//@include blur(5px)
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+
+}
+
+
+

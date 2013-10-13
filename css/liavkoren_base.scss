@@ -1,5 +1,5 @@
-@charset "utf-8";
 /* CSS Document */
+@charset "utf-8";
 @import "reset";
 @import "nav-mobile";
 @import "mixins";
@@ -27,99 +27,97 @@ body{
 	p {
 		font-family: 'raleway-regular';
 	}
-	.info-box {
-		//background-image: url(../images/index_background_mobile2_blurred.jpg);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		/* box-sizing: border-box;
-		-moz-box-sizing: border-box; */
-		float: none;
-		height: auto;
-		left: 0%;
-		background-color: $infobox-background;
-		border-color: $content-border;
-		border-width:thin;
-		border-style: dotted;
-		border-bottom: none;
-		border-left: none;
-		border-right:none;
-		padding-left: 3em;
-		padding-right:3em;
-		padding-top: 1em;
-		position:relative;
-		opacity: 1.0;
-		margin: auto;
-		width:100%;
-		z-index: 100;
-		p {
-			@include body-text-style;
-			padding-bottom: 1.5em;
-			line-height: 1.4em;
-			a {
-				@include body-hyperlink-style;
-			}
+}
+.info-box { //moved out of body selector 13 Oct 13.
+	//background-image: url(../images/index_background_mobile2_blurred.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	float: none;
+	height: auto;
+	left: 0%;
+	background-color: $infobox-background;
+	border-color: $content-border;
+	border-width:thin;
+	border-style: dotted;
+	border-bottom: none;
+	border-left: none;
+	border-right:none;
+	padding-left: 3em;
+	padding-right:3em;
+	padding-top: 3em;
+	position:relative;
+	opacity: 1.0;
+	margin: auto;
+	width:100%;
+	z-index: 100;
+	p {
+		@include body-text-style;
+		padding-bottom: 1.5em;
+		line-height: 1.4em;
+		a {
+			@include body-hyperlink-style;
 		}
-		ul{
-			@include body-text-style;
-			list-style-position: outside;
-			list-style-type: disc;
-			margin-left: 1.7em;
-			padding-bottom: 1.5em;
-			line-height: 1.5em;
-			li {
-				text-indent: -0.9em;
-			}
-			a{
-				@include body-hyperlink-style;
-			}
+	}
+	ul{
+		@include body-text-style;
+		list-style-position: outside;
+		list-style-type: disc;
+		margin-left: 1.7em;
+		padding-bottom: 1.5em;
+		line-height: 1.5em;
+		li {
+			text-indent: -0.9em;
 		}
-		.short{ //short ULs.
-				padding-bottom: 0.15em;
+		a{
+			@include body-hyperlink-style;
 		}
-		.bullet:before{
-			content: "ỽ ";
-			color: $bullet-color;
-			@include body-text-style;
-			display: inline-block;
-			text-decoration:none;
-			@include body-text-style;
-		}
-		pre {
-			@include body-text-style;
-			line-height: 1.25em;
-			background-color: rgb(0, 43, 54);
-			border-left-color: rgb(5, 35, 43);
-			display: block;
-			word-break: break-all;
-			word-wrap: break-word;
+	}
+	.short{ //short ULs.
+			padding-bottom: 0.15em;
+	}
+	.bullet:before{
+		content: "ỽ ";
+		color: $bullet-color;
+		@include body-text-style;
+		display: inline-block;
+		text-decoration:none;
+		@include body-text-style;
+	}
+	pre {
+		@include body-text-style;
+		line-height: 1.25em;
+		background-color: rgb(0, 43, 54);
+		border-left-color: rgb(5, 35, 43);
+		display: block;
+		word-break: break-all;
+		word-wrap: break-word;
+		margin-bottom: 1em;
+	}
+	img{
+		padding-top: 0.5em;
+		max-width:100%
+	}
+	.stroke{ //for image divs that need a boarder.
+		img{
+			width: 100%;
+			border: #888888;
+			border-width: 1px;
+			border-style: dotted;
 			margin-bottom: 1em;
 		}
+	}
+	.hero { //Hero image headers.
 		img{
-			padding-top: 0.5em;
-			max-width:100%
+			padding-top:2em;
+			padding-bottom: 1em;
 		}
-		.stroke{ //for image divs that need a boarder.
-			img{
-				width: 100%;
-				border: #888888;
-				border-width: 1px;
-				border-style: dotted;
-				margin-bottom: 1em;
-			}
-		}
-		.hero { //Hero image headers.
-			img{
-				padding-top:2em;
-				padding-bottom: 1em;
-			}
-		}
-		.image{
-			a {
-				max-width:550px;
-				display: block;
-				max-height: 100%;
-				height: auto;
-			}
+	}
+	.image{
+		a {
+			max-width:550px;
+			display: block;
+			max-height: 100%;
+			height: auto;
 		}
 	}
 }
@@ -140,7 +138,7 @@ h3 {
 }
 h4 {
 	font-family: 'ostrich-rounded';
-	font-size: 2em;
+	font-size: 2.2em;
 	line-height: 1em;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
@@ -168,4 +166,14 @@ h4 {
 	clear: both;
 }
 
-
+ //Tablet format
+//@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
+@media all and (min-width: 520px) {
+	.info-box{
+		padding-top: 6em;
+	}
+	img{
+		padding-left: 2em;
+		//padding-right: 2em;
+	}
+}

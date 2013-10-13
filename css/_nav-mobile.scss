@@ -16,9 +16,6 @@
 }
 
 .nav-bar{
-	/*-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box; */
 	background: $nav-bar-beige;
 	font-family: 'OstrichSans-Black';
 	font-size: 1.35em;
@@ -45,11 +42,10 @@
 		width:100%;
 		display: block;
 		padding-top: 0.1em;
-		padding-bottom: 0.5em;
+		padding-bottom: 1.75em;
 	}
 	a {
 		display: block;
-		//width: 100%;
 		overflow: hidden;
 		height: $nav-bar-height;
 		text-decoration: none;
@@ -64,7 +60,6 @@
 		&:hover{
 			height: $nav-bar-height;
 			padding-left: 0.5em; //Pushes the hovered item left. A transition would be nice on this.
-			//padding-top: 0.25em;
 			background-color: $navbar_background_hover;
 			width: 100%;
 		}
@@ -83,42 +78,88 @@
 	}
 }
 
- /*************************/
- //Tablet format
-@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
-	.nav-bar {
-		width: 100%;
-		display:block;
-		font-size:130%;
-		padding-left: 2em;
-		float: none;
-		left:0;
-		margin:auto;
-		position:relative;
-		top:0;
-		@include round-bottom(0,0);
-		z-index: 100;
-		ul{
-		  	float: left;
-			&:first-child {
-				//@include round-corner(0);
-			}
+
+////Tablet and larger:
+@media all and (min-width: 520px) {
+	.titlebar_image {
+		width:100%;
+		height: 80px;
+		background-image: url(../images/banner/life_banner_Revised_1200_fa.jpg);
+////old:
+		overflow: hidden;
+		background-repeat: no-repeat;
+		border-bottom-width:thin;
+		border-bottom-style:dotted;
+		line-height: 1.25em;
+	}
+	.titleBar{
+		padding: 0;
+		h1{
+			position: absolute;
+			font-size:2.25em;
+			top:1.5em;
+			left:1.5em;
+			color: $titleBar_h1_darker;
+			line-height: 22px;
 		}
-		li {
-			float: right;
-			font-size: 1.5em;
-			border-bottom: 0;
-			padding-right: 1em;
-			}
-		}
-	.titleBar h1{
-		font-size:2.25em;
-		top:1.5em;
-		left:1.5em;
-		color: $titleBar_h1_darker;
-		line-height: 22px;
 	}
 }
+////Tablet format:
+@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
+/*	.titleBar{
+		padding: 0;
+		h1{
+			position: absolute;
+			font-size:2.25em;
+			top:1.5em;
+			left:1.5em;
+			color: $titleBar_h1_darker;
+			line-height: 22px;
+		}
+	}*/
+	$li-padding: 1.25em;
+	$nav-bar-vertical-padding: 0.4em;
+	.nav-bar {
+		font-size:100%;
+		height: $nav-bar-height;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: $nav-bar-vertical-padding;
+		margin-bottom: $nav-bar-vertical-padding;
+		position:absolute;
+		opacity: 0.9;
+		top:76px;
+		width: 100%;
+		z-index: 100;
+		ul{
+		  	overflow: hidden;
+		}
+		li {
+			clear: none;
+			display: inline;
+			float: right;
+			font-size: 1.5em;
+			padding-top: 0;
+			padding-bottom: 0;
+			width: auto;
+		}
+		a {
+			float: left;
+			padding-right: $li-padding;
+			padding-left: $li-padding;
+			&:hover {
+				padding-right: $li-padding;
+				padding-left: $li-padding;
+				width: auto;
+			}
+			&:first-child{
+				padding-left: $li-padding;
+			}
+		}
+	}
+}
+
+
 //////////////////////
 
 @media screen and (min-width: 1335px) {

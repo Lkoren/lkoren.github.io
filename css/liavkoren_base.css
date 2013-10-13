@@ -101,13 +101,14 @@ input, select {
     color: #776666; }
 
 .nav-bar {
-  -moz-box-sizing: border-box;
+  /*-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   background: #d6d6c2;
   font-family: 'OstrichSans-Black';
   font-size: 1.35em;
   display: block;
+  clear: both;
   position: relative;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -446,6 +447,11 @@ input, select {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   font-size: 62.5%;
   text-rendering: optimizeSpeed; }
@@ -457,8 +463,8 @@ body {
   body .info-box {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    /* box-sizing: border-box;
+    -moz-box-sizing: border-box; */
     float: none;
     height: auto;
     left: 0%;
@@ -589,6 +595,8 @@ h4 {
   background-attachment: fixed;
   position: relative;
   float: left;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  display: block;
+  clear: both; }
   .content-container img {
     float: right; }

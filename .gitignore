@@ -13,4 +13,8 @@ blog_removed/*
 ../blog_removed/
 ../blog_removed
 ../blog_removed/*
+ToDo
+js/vendor/box-sizing-polyfill
+js/vendor/box-sizing-polyfill/
+js/vendor/box-sizing-polyfill/*
 

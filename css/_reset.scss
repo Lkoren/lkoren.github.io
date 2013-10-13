@@ -25,6 +25,7 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
     -webkit-appearance: none;
+    -moz-appearance: none; //as per CSS Lint, 13 Oct 13.
 }
 body {
     line-height:1;

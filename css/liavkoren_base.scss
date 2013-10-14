@@ -29,7 +29,6 @@ body{
 	}
 }
 .info-box { //moved out of body selector 13 Oct 13.
-	//background-image: url(../images/index_background_mobile2_blurred.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	float: none;
@@ -143,7 +142,6 @@ h4 {
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 }
-
 .content-container{
 	width:100%;
 	height: auto;
@@ -173,11 +171,10 @@ h4 {
 	}
 	img{
 		padding-left: 2em;
-		//padding-right: 2em;
 	}
 }
 
-//@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+////Specific settings for tablet landscape & small desktop:
 @media screen and (min-width: $tablet-max) {
 	.content-container{
 		background: $white top right no-repeat fixed;
@@ -194,7 +191,6 @@ h4 {
 		padding-bottom: 12em;
 		width: 90%;
 		@include round-bottom(0, 30) //fits a moz bug
-
 	}
 	.doc-container{
 		padding-bottom: 3em;
@@ -217,6 +213,7 @@ h4 {
 	}
 }
 
+////Wide screen:
 @media screen and (min-width: 1335px) {
 	.content-container{
 		width: 1200px;

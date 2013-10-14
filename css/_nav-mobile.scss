@@ -78,8 +78,7 @@
 	}
 }
 
-
-////Tablet and larger:
+////General settings for tablet and larger:
 @media all and (min-width: 520px) {
 	.titlebar_image {
 		background-image: url(../images/banner/life_banner_Revised_1200_fa.jpg);
@@ -144,13 +143,8 @@
 	}
 
 }
-////Tablet portrait:
-@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
 
-}
-
-////Tablet landscape & small desktop:
-//@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+////Specific settings for tablet landscape & small desktop:
 @media screen and (min-width: $tablet-max) {
 	.content-container{
 		margin-top: 20px;
@@ -195,9 +189,6 @@
 	}
 }
 
-
-
-
 ////Wide screen:
 @media screen and (min-width: 1335px) {
 	.content-container{
@@ -221,23 +212,4 @@
 		top: -4px;
 		right: 0;
 	}
-
 }
-
-
-
-/*
-@media screen and (min-width: 1335px) {
-	.nav-bar{
-		position:relative;
-		right:0;
-		top:-1.85em;
-		float:right;
-
-		ul {
-			float:right;
-		}
-	}
-}
-*/
-

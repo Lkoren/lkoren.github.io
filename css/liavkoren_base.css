@@ -267,20 +267,6 @@ input, select {
   .nav-bar {
     top: -4px;
     right: 0; } }
-/*
-@media screen and (min-width: 1335px) {
-	.nav-bar{
-		position:relative;
-		right:0;
-		top:-1.85em;
-		float:right;
-
-		ul {
-			float:right;
-		}
-	}
-}
-*/
 .highlight {
   background-color: #073642;
   color: #93a1a1; }

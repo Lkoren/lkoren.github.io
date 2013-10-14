@@ -82,15 +82,14 @@
 ////Tablet and larger:
 @media all and (min-width: 520px) {
 	.titlebar_image {
-		width:100%;
-		height: 80px;
 		background-image: url(../images/banner/life_banner_Revised_1200_fa.jpg);
-////old:
-		overflow: hidden;
 		background-repeat: no-repeat;
 		border-bottom-width:thin;
 		border-bottom-style:dotted;
+		height: 80px;
 		line-height: 1.25em;
+		overflow: hidden;
+		width:100%;
 	}
 	.titleBar{
 		padding: 0;
@@ -103,20 +102,6 @@
 			line-height: 22px;
 		}
 	}
-}
-////Tablet format:
-@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
-/*	.titleBar{
-		padding: 0;
-		h1{
-			position: absolute;
-			font-size:2.25em;
-			top:1.5em;
-			left:1.5em;
-			color: $titleBar_h1_darker;
-			line-height: 22px;
-		}
-	}*/
 	$li-padding: 1.25em;
 	$nav-bar-vertical-padding: 0.4em;
 	.nav-bar {
@@ -157,6 +142,56 @@
 			}
 		}
 	}
+
+}
+////Tablet portrait:
+@media screen and (max-width: $tablet-max) and (min-width: $tablet-min) {
+
+}
+
+////Tablet landscape & small desktop:
+@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+	.content-container{
+		margin-top: 20px;
+		overflow: hidden;
+		padding-bottom: 10em;
+	}
+	.titleBar{
+		line-height: 1.25em;
+		h1 {
+			font-size: 3em;
+			line-height:3em;
+			color: $titleBar_h1;
+			top: -0.25em;
+			left:1.5em;
+		}
+	}
+	.nav-bar {
+		float: right;
+		right: 5%;
+		opacity: 0.8;
+		top: 72px;
+		width: auto;
+		@include round-corner(25);
+		ul {
+			&:first-child{
+				@include round-corner(25);
+			}
+
+		}
+		ul a {
+			&:first-child{
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+		}
+	}
+	a {
+		&:hover{
+			height: $nav-bar-height;
+			background-color: $navbar_background_hover;
+		}
+	}
 }
 
 
@@ -168,6 +203,7 @@
 		right:0;
 		top:-1.85em;
 		float:right;
+
 		ul {
 			float:right;
 		}

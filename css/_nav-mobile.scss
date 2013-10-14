@@ -150,7 +150,8 @@
 }
 
 ////Tablet landscape & small desktop:
-@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+//@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+@media screen and (min-width: $tablet-max) {
 	.content-container{
 		margin-top: 20px;
 		overflow: hidden;
@@ -169,7 +170,7 @@
 	.nav-bar {
 		float: right;
 		right: 5%;
-		opacity: 0.8;
+		opacity: 0.9;
 		top: 72px;
 		width: auto;
 		@include round-corner(25);
@@ -181,8 +182,8 @@
 		}
 		ul a {
 			&:first-child{
-				padding-left: 2em;
-				padding-right: 2em;
+				padding-left: 1.5em;
+				padding-right: 1.5em;
 			}
 		}
 	}
@@ -195,8 +196,37 @@
 }
 
 
-//////////////////////
 
+
+////Wide screen:
+@media screen and (min-width: 1335px) {
+	.content-container{
+		width: 1200px;
+	}
+	////Using _outer and _inner to set the nav bar in the correct Y then X position:
+	.nav_outer{
+		position: absolute;
+		top: 76px;
+		width: 100%;
+		height: 2.5em;
+		margin: auto;
+	}
+	.nav_inner{
+		position: relative;
+		width: 1200px;
+		height: 25px;
+		margin: auto;
+	}
+	.nav-bar{
+		top: -4px;
+		right: 0;
+	}
+
+}
+
+
+
+/*
 @media screen and (min-width: 1335px) {
 	.nav-bar{
 		position:relative;
@@ -209,4 +239,5 @@
 		}
 	}
 }
+*/
 

@@ -177,7 +177,8 @@ h4 {
 	}
 }
 
-@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+//@media screen and (min-width: $tablet-max) and (max-width: 1334px) {
+@media screen and (min-width: $tablet-max) {
 	.content-container{
 		background: $white top right no-repeat fixed;
 		background-image: url(../images/index_background_800square_flipped.jpg);
@@ -214,4 +215,14 @@ h4 {
 		z-index: 110;
 		@include round-bottom(5,20);
 	}
+}
+
+@media screen and (min-width: 1335px) {
+	.content-container{
+		width: 1200px;
+	}
+	.nav_outer{
+
+	}
+
 }

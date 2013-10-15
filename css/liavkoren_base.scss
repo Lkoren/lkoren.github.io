@@ -166,6 +166,9 @@ h4 {
 
 //Tablet portrait format and larger:
 @media all and (min-width: 520px) {
+	body{
+		text-rendering: optimizeLegibility;
+	}
 	.info-box{
 		padding-top: 6em;
 	}

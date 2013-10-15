@@ -1,5 +1,5 @@
 ---
-layout: blog_entry2
+layout: default
 title: Floats, fillets, parents, children.
 ---
 4 Oct 2013

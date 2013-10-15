@@ -1,5 +1,5 @@
 ---
-layout: blog_entry2
+layout: default
 Title: Thoughts about the JS module pattern.
 ---
 

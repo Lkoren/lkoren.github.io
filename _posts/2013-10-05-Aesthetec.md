@@ -1,5 +1,5 @@
 ---
-layout: mobile
+layout: default
 title: A Custom Full-Stack solution for Aesthetec Studios
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: blog_entry2
+layout: default
 title: Webfonts I have loved
 ---
 

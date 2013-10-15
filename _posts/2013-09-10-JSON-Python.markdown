@@ -1,5 +1,5 @@
 ---
-layout: blog_entry2
+layout: default
 title: Minor JSON + python issue
 ---
 

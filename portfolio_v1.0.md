@@ -1,5 +1,5 @@
 ---
-layout: blog_entry2
+layout: default
 title: Portfolio // v1.5
 ---
 

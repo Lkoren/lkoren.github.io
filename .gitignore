@@ -17,4 +17,6 @@ ToDo
 js/vendor/box-sizing-polyfill
 js/vendor/box-sizing-polyfill/
 js/vendor/box-sizing-polyfill/*
+js/vendor/
+js/vendor/*
 

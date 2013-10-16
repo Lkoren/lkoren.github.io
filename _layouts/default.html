@@ -12,13 +12,11 @@
         <!--[if (lt IE 9)&(!IEMobile)]>
         <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/liavkoren_base.css" />
         <![endif]-->
-        <link rel="stylesheet" type="text/css" href={{site.baseurl}}css/liavkoren_base.css media="screen, handheld" />
-        <!-- <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="{{site.baseurl}}css/liavkoren_base.css" media="screen, handheld" />
     </head>
-    <body>
-        <!-- <div class="doc-container main-page"> -->
-        <div class="doc-container">
-            <div class="content-container">
+    <body id="skrollr-body" >
+        <div class="doc-container" >
+            <div class="content-container" data-start="background-position: right 0px;" data-end="background-position: right 0px;">
                 <div class = "background_image"></div>
                 <div class="titleBar">
                     <h1>Liav Koren // artisanal electrons // handcrafted pixels.</h1>
@@ -26,7 +24,7 @@
                     <!--<img src="images/banner/life_banner_Revised_1200_fa.jpg" alt="Liav Koren // Recent Work banner"
                         width="1200" height="80" /> -->
                 </div>
-                <div class="mobile_background"></div>
+                <!--<div class="mobile_background"></div>-->
                 <div class = "info-box">
                     {{content}}
                 </div>
@@ -36,6 +34,17 @@
                     {% include nav_dynamic.html %}
                 </div>
             </div>
+
+            <script type="text/javascript" src="{{site.baseurl}}js/vendor/skrollr/dist/skrollr.min.js"></script>
+            <script type="text/javascript">
+                skrollr.init({
+                    forceHeight: false,
+                    smoothScrolling: true,
+                    mobileDeceleration: 0.1
+                });
+            </script>
+
+            <!-- <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
             <!--
             <script>
                 var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

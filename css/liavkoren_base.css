@@ -687,7 +687,6 @@ h4 {
 @media screen and (min-width: 759px) {
   .content-container {
     background: white top right no-repeat fixed;
-    background-image: url(../images/index_background_800square_flipped.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     border: thin;
@@ -729,6 +728,10 @@ h4 {
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
     border-radius: 5px 5px 20px 20px;
     background-clip: padding-box; } }
+@media screen and (min-width: 1025px) {
+  .content-container {
+    background: white top right no-repeat fixed;
+    background-image: url(../images/index_background_800square_flipped.jpg); } }
 @media screen and (min-width: 1335px) {
   .content-container {
     width: 1200px; } }

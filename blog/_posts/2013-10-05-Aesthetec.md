@@ -25,7 +25,7 @@ Baylor College of Medicine is a medical school with teaching hospitals in Huston
   <img src="/assets/2013-10-05/Baylor_halfsize.jpg" alt="Baylor College of Medicine, Special Care Building"/>
 </div>
 
-Aesthetec won the contract for a series of LED signage display panels. The panels are high resolution LED elements [well, *higher* resolution than your average commodity red/green LED matrix. Picture elements are about 1mm in size. They're sold in small blocks that are 32 x 32 LED elements in size. Aesthetec's custom assembly is an array of 1 x 10 block (giving 320 x 32 pixels per row) mounted onto custom electronics and mounting hardware. This give you a nice sturdy modular LED strip with a small depth footprint. For Baylor these LED strips are then mounted into a frame behind Alabaster or wood veneer, allowing the light to diffuse through.]
+Aesthetec won the contract for a series of LED signage display panels. The panels are high resolution LED elements &mdash; well, *higher* resolution than your average commodity red/green LED matrix. Picture elements are about 1mm in size. They're sold in small blocks that are 32 x 32 LED elements in size. Aesthetec's custom assembly is an array of 1 x 10 block (giving 320 x 32 pixels per row) mounted onto custom electronics and mounting hardware. This give you a nice sturdy modular LED strip with a small depth footprint. For Baylor these LED strips are then mounted into a frame behind Alabaster or wood veneer, allowing the light to diffuse through.
 
 Each panel is driven by a RaspberryPi server which stores the current state of the panel, sends commands to the firmware and allows the College staff to do Create/Read/Update/Delete operations on the current and saved states for the panels.
 

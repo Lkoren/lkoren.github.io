@@ -1,0 +1,518 @@
+
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"aaaa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"352",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"aagg",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"45",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"zz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"aaa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"c",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"24",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"zzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"222",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"22",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"z",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"11",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"h",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"444",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"121",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"aa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"0.00",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2342",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"x",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_baz_md_entityrsquo___md_linkmd_entitylsquoaaaamd_entityrsquo_md_entitylsquo352md_entityrsquo_md_entitylsquoaaggmd_entityrsquo_md_entitylsquo45md_entityrsquo_md_entitylsquozzmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo____md_entitylsquo_foo_md_entityrsquo___md_linkmd_entitylsquoaaamd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entityrsquocmd_entityrsquo_md_entitylsquo24md_entityrsquo_md_entitylsquozzzmd_entityrsquo_md_entitylsquo222md_entityrsquo_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo____md_entitylsquo_bar_md_entityrsquo___md_linkmd_entitylsquozzzmd_entityrsquo_md_entitylsquo22md_entityrsquo_md_entityrsquozmd_entityrsquo_md_entitylsquo11md_entityrsquo_md_entityrsquohmd_entityrsquo_md_entitylsquo444md_entityrsquo_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo____md_entitylsquo_zc_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo121md_entityrsquo_md_entitylsquoaamd_entityrsquo_md_entitylsquo000md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo____md_entitylsquo_fhfh_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo2342md_entityrsquo_md_entityrsquoxmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo__" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"baz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_link([
+| 		"{",
+| 		md_entity("lsquo"),
+| 		"aaaa",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"352",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("lsquo"),
+| 		"aagg",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"45",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("lsquo"),
+| 		"zz",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"2",
+| 		md_entity("rsquo"),
+| 		"}"
+| 	],"_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"foo",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_link([
+| 		"{",
+| 		md_entity("lsquo"),
+| 		"aaa",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"2",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("rsquo"),
+| 		"c",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"24",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("lsquo"),
+| 		"zzz",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"222",
+| 		md_entity("rsquo"),
+| 		"}"
+| 	],"_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"bar",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_link([
+| 		"{",
+| 		md_entity("lsquo"),
+| 		"zzz",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"22",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("rsquo"),
+| 		"z",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"11",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("rsquo"),
+| 		"h",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"444",
+| 		md_entity("rsquo"),
+| 		"}"
+| 	],"_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"zc",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_link([
+| 		"{",
+| 		md_entity("lsquo"),
+| 		"zzzz",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"121",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("lsquo"),
+| 		"aa",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"0.00",
+| 		md_entity("rsquo"),
+| 		"}"
+| 	],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"fhfh",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_link([
+| 		"{",
+| 		md_entity("lsquo"),
+| 		"zzzz",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"2342",
+| 		md_entity("rsquo"),
+| 		"}, {",
+| 		md_entity("rsquo"),
+| 		"x",
+| 		md_entity("rsquo"),
+| 		": ",
+| 		md_entity("lsquo"),
+| 		"2",
+| 		md_entity("rsquo"),
+| 		"}"
+| 	],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_"),
+| 	"}"
+| ],"_md_entitylsquo_baz_md_entityrsquo___md_linkmd_entitylsquoaaaamd_entityrsquo_md_entitylsquo352md_entityrsquo_md_entitylsquoaaggmd_entityrsquo_md_entitylsquo45md_entityrsquo_md_entitylsquozzmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo____md_entitylsquo_foo_md_entityrsquo___md_linkmd_entitylsquoaaamd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entityrsquocmd_entityrsquo_md_entitylsquo24md_entityrsquo_md_entitylsquozzzmd_entityrsquo_md_entitylsquo222md_entityrsquo_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo____md_entitylsquo_bar_md_entityrsquo___md_linkmd_entitylsquozzzmd_entityrsquo_md_entitylsquo22md_entityrsquo_md_entityrsquozmd_entityrsquo_md_entitylsquo11md_entityrsquo_md_entityrsquohmd_entityrsquo_md_entitylsquo444md_entityrsquo_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo____md_entitylsquo_zc_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo121md_entityrsquo_md_entitylsquoaamd_entityrsquo_md_entitylsquo000md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo____md_entitylsquo_fhfh_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo2342md_entityrsquo_md_entityrsquoxmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo__")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_baz_md_entityrsquo___md_linkmd_entitylsquoaaaamd_entityrsquo_md_entitylsquo352md_entityrsquo_md_entitylsquoaaggmd_entityrsquo_md_entitylsquo45md_entityrsquo_md_entitylsquozzmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo____md_entitylsquo_foo_md_entityrsquo___md_linkmd_entitylsquoaaamd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entityrsquocmd_entityrsquo_md_entitylsquo24md_entityrsquo_md_entitylsquozzzmd_entityrsquo_md_entitylsquo222md_entityrsquo_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo____md_entitylsquo_bar_md_entityrsquo___md_linkmd_entitylsquozzzmd_entityrsquo_md_entitylsquo22md_entityrsquo_md_entityrsquozmd_entityrsquo_md_entitylsquo11md_entityrsquo_md_entityrsquohmd_entityrsquo_md_entitylsquo444md_entityrsquo_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo____md_entitylsquo_zc_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo121md_entityrsquo_md_entitylsquoaamd_entityrsquo_md_entitylsquo000md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo____md_entitylsquo_fhfh_md_entityrsquo___md_linkmd_entitylsquozzzzmd_entityrsquo_md_entitylsquo2342md_entityrsquo_md_entityrsquoxmd_entityrsquo_md_entitylsquo2md_entityrsquo_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo__".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"aaaa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"352",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"aagg",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"45",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"zz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_aaaa_md_entityrsquo___md_entitylsquo_352_md_entityrsquo___md_entitylsquo_aagg_md_entityrsquo___md_entitylsquo_45_md_entityrsquo___md_entitylsquo_zz_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"aaa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"c",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"24",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"zzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"222",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_aaa_md_entityrsquo___md_entitylsquo_2_md_entityrsquo___md_entityrsquo_c_md_entityrsquo___md_entitylsquo_24_md_entityrsquo___md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_222_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"22",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"z",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"11",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"h",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"444",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzz_md_entityrsquo___md_entitylsquo_22_md_entityrsquo___md_entityrsquo_z_md_entityrsquo___md_entitylsquo_11_md_entityrsquo___md_entityrsquo_h_md_entityrsquo___md_entitylsquo_444_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"121",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("lsquo"),
+| 	"aa",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"0.00",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_121_md_entityrsquo___md_entitylsquo_aa_md_entityrsquo___md_entitylsquo_000_md_entityrsquo_".
+ ___________________________________________________________________________
+| Maruku tells you:
++---------------------------------------------------------------------------
+| Could not find ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_" for md_link([
+| 	"{",
+| 	md_entity("lsquo"),
+| 	"zzzz",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2342",
+| 	md_entity("rsquo"),
+| 	"}, {",
+| 	md_entity("rsquo"),
+| 	"x",
+| 	md_entity("rsquo"),
+| 	": ",
+| 	md_entity("lsquo"),
+| 	"2",
+| 	md_entity("rsquo"),
+| 	"}"
+| ],"_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_")
+| Available refs are []
++---------------------------------------------------------------------------
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/errors_management.rb:49:in `maruku_error'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:715:in `to_html_link'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:970:in `block in array_to_html'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `each'
+!/home/liav/.rvm/gems/ruby-2.0.0-p247/gems/maruku-0.6.1/lib/maruku/output/to_html.rb:961:in `array_to_html'
+\___________________________________________________________________________
+Not creating a link for ref_id = "_md_entitylsquo_zzzz_md_entityrsquo___md_entitylsquo_2342_md_entityrsquo___md_entityrsquo_x_md_entityrsquo___md_entitylsquo_2_md_entityrsquo_".

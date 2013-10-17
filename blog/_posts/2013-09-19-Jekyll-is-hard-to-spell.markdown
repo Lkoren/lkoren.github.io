@@ -11,4 +11,4 @@ I did find a couple of pretty nice posting on static site generators, though:
 http://www.ausset.me/webdev/static-blogs-are-the-future/
 	- How to serve your static site through S3 and a CDN (!)
 http://evanmuehlhausen.com/a-few-static-blog-generators/
-	- I don't know if Evan Muehlhausen's posting was born out of a similiar fit of analysis paralysis, but he sure got a lot of analysis done. He does point to the <a href="http://docs.getpelican.com/en/3.2/">Pelican</a> framework, which could easily have been my top choice (<3 python) if I hadn't really wanted a ruby framework.
+	- I don't know if Evan Muehlhausen's posting was born out of a similiar fit of analysis paralysis, but he sure got a lot of analysis done. He does point to the <a href="http://docs.getpelican.com/en/3.2/">Pelican</a> framework, which could easily have been my top choice (&lt;3 python) if I hadn't really wanted a ruby framework.

@@ -635,8 +635,9 @@ body {
   .info-box .image a {
     max-width: 550px;
     display: block;
+    height: auto;
     max-height: 100%;
-    height: auto; }
+    overflow: hidden; }
 
 h1 {
   font-size: 3em;

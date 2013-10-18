@@ -28,6 +28,7 @@ body{
 		font-family: 'raleway-regular';
 	}
 }
+
 .info-box { //moved out of body selector 13 Oct 13.
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -115,8 +116,9 @@ body{
 		a {
 			max-width:550px;
 			display: block;
-			max-height: 100%;
 			height: auto;
+			max-height: 100%;
+			overflow: hidden;
 		}
 	}
 }

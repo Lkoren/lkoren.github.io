@@ -15,7 +15,7 @@ title: A Custom Full-Stack solution for Aesthetec Studios
 
 ### Intro
 
-This is a project I've been helping  \[Mark Argo\](http://www.argobot.com) of \[Aesthetec Studio\](http://www.aesthetec.net) on this year. Aesthetec specializes in interactive installations for art and exhibition contexts, which is an area I'm particularly interested in. It's been a treat working with them &mdash; they're great designers and Mark has impressive hardware design chops.
+This is a project I've been helping  [Mark Argo](http://www.argobot.com) of [Aesthetec Studio](http://www.aesthetec.net) on this year. Aesthetec specializes in interactive installations for art and exhibition contexts, which is an area I'm particularly interested in. It's been a treat working with them &mdash; they're great designers and Mark has impressive hardware design chops.
 
 ### Project Brief
 
@@ -52,13 +52,13 @@ Everything on the server upstream of the panel Display Driver was my responsibil
 
 #### The framework
 
-The target context plus the expected usage pattern suggested a relatively lightweight framework. We very early on decided to use flat-files to store message strings. My friend \[Rob Gilson\](https://twitter.com/d1plo1d) had pointed me at the \[Tornado\](http://www.tornadoweb.org/en/stable/) web server/framework last year and and I've been playing around with it for a while. It seemed like a particularly nice fit: lightweight, robust, relatively straight-forward to deploy, Python-based. One initial minor concern was that there doesn't seem to be a *huge* amount of documentation on it. The website docs are pretty good and a careful google search will generally turn-up something relevant, but the sense I've gotten is it doesn't have quite the massive amount of documentation some other frameworks do. However, it's also been correspondingly easier to work with. A copy of \[Introduction to Tornado\](http://shop.oreilly.com/product/0636920021292.do)  was helpful at a couple of points.
+The target context plus the expected usage pattern suggested a relatively lightweight framework. We very early on decided to use flat-files to store message strings. My friend [Rob Gilson](https://twitter.com/d1plo1d) had pointed me at the [Tornado](http://www.tornadoweb.org/en/stable/) web server/framework last year and and I've been playing around with it for a while. It seemed like a particularly nice fit: lightweight, robust, relatively straight-forward to deploy, Python-based. One initial minor concern was that there doesn't seem to be a *huge* amount of documentation on it. The website docs are pretty good and a careful google search will generally turn-up something relevant, but the sense I've gotten is it doesn't have quite the massive amount of documentation some other frameworks do. However, it's also been correspondingly easier to work with. A copy of [Introduction to Tornado](http://shop.oreilly.com/product/0636920021292.do)  was helpful at a couple of points.
 
 One of the first things I did was a search to for Tornado + RaspberyPi, which turned up:
 <ul class = "short">
-<li class = "bullet"> \[Raspberry Pi + Arduino + Tornado\](http://niltoid.com/blog/raspberry-pi-arduino-tornado/) </li>
-<li class = "bullet">\[Tornado on Raspberry Pi...\](http://stackoverflow.com/questions/14186925/tornado-on-raspberry-pi-to-use-websockets-as-well-as-monitor-serial-port-arduino)</li>
-<li class = "bullet">\[http://martinsant.net/?page_id=479\](http://martinsant.net/?page_id=479)</li>
+<li class = "bullet"> [Raspberry Pi + Arduino + Tornado](http://niltoid.com/blog/raspberry-pi-arduino-tornado/) </li>
+<li class = "bullet">[Tornado on Raspberry Pi...](http://stackoverflow.com/questions/14186925/tornado-on-raspberry-pi-to-use-websockets-as-well-as-monitor-serial-port-arduino)</li>
+<li class = "bullet">[http://martinsant.net/?page_id=479](http://martinsant.net/?page_id=479)</li>
 </ul>
 
 Since we've started this project a lot more Pi + Tornado projects have cropped up, but at the time, these were the best results I could turn up. This made me a little nervous, but Niltoid and MartinSant did both report success, so it seemed worth at least investigating Tornado. Once I got the Raspberry Pi it was really very straight-forward to install Tornado. Likewise on OS X. We decided to work with it.
@@ -74,8 +74,8 @@ BCM is the first installation of this system. As mentioned, there's more than on
   {"current":
     {"header": header_info,
     "filename": filename,
-    "data": \[{"font_size": Large | Small,
-          "content": \[text_string1, text_string2\]}\]
+    "data": [{"font_size": Large | Small,
+          "content": [text_string1, text_string2]}]
   }}
 
 {% endhighlight %}
@@ -106,7 +106,7 @@ BCM is the first installation of this system. As mentioned, there's more than on
 
 {% highlight javascript %}
 update_text_color(
-   message_state\[message_state.current_state\])
+   message_state[message_state.current_state])
 {% endhighlight %}
 
 <p>which I thought was a nice, clean way of packaging both state and the information that travels with it.</p>
@@ -117,7 +117,7 @@ update_text_color(
 
 </div>
 
-As I was working on this element of the UI I got to the point were I wanted update in real-time with user changes. This is one of those things that seems like it should be straight forward, but can actually be fairly tricky. If you attach a `onChange` or jQuery `.change` listener to a form element, it only fires `onBlur.` You actually need to bind to `.keyup`, and even that won't catch things like cut and paste. I ended up using a jQuery plugin from \[zerb.com\](http://zurb.com/playground/jquery-text-change-custom-event) that deals with the issue, and was very happy with it.
+As I was working on this element of the UI I got to the point were I wanted update in real-time with user changes. This is one of those things that seems like it should be straight forward, but can actually be fairly tricky. If you attach a `onChange` or jQuery `.change` listener to a form element, it only fires `onBlur.` You actually need to bind to `.keyup`, and even that won't catch things like cut and paste. I ended up using a jQuery plugin from [zerb.com](http://zurb.com/playground/jquery-text-change-custom-event) that deals with the issue, and was very happy with it.
 
 One thing could definitely stand to be refactored in the current code is the way I'm binding listeners to the text fields. When the user selects a different saved message from the list of preset messages, the new message strings are AJAX'd off the server and jQuery'd into the page, which overall I'm very happy with. At the end of the process, though, the listeners need to be rebound to the text fields -- this could likely be avoided by a more careful targetting of parent elements that aren't replaced.
 
@@ -172,7 +172,7 @@ The template structure is, roughly:
 <p>At the end of the process we also render out a check.txt file which has a human-readable base two version of the bit-frame (how often do the phrases "human readable" and "base two" appear in the same sentence?). My favorite line of code in the project lives in this check method. (Un?)fortunately(??) it has been slightly watered down, the victim(??) of a late-in-the-game streamlining of the datastructures. Initially we'd been constructing the bitframes at as multidimensional arrays. We finally settled on a flat array of longs, which meant that the list comprehension that generated the check.txt file also suffered a streamlining. For perversity's sake I'm archiving here the original version:</p>
 
 {% highlight python %}
-  \[newRow.append(bin(num)\[2:\].zfill(32)) for num in row\]
+  [newRow.append(bin(num)[2:].zfill(32)) for num in row]
 {% endhighlight %}
 
 <p>Grab a number from the dataframe, convert it to base two, slice off the '0b' prefix, pad it out to 32 chars, append it onto newRow.</p>

@@ -171,7 +171,6 @@ h4 {
 	}
 	.info-box{
 		padding-top: 6em;
-
 	}
 	img{
 		padding-left: 2em;
@@ -190,10 +189,11 @@ h4 {
 		border-color: $content-border;
 		float: none;
 		margin: auto;
-		margin-top: 2em;
+		//margin-top: 2em;
 		overflow: hidden;
 		padding-bottom: 12em;
-		width: 90%;
+		//width: 90%;
+		width: 100%;
 		@include round-bottom(0, 30) //fits a moz bug
 	}
 	.doc-container{
@@ -204,23 +204,32 @@ h4 {
 		border-color: $content-border;
 		border-width: thin;
 		border-style: dotted;
-		float: left;
-		left: 5%;
+		//float: left;
+		float: none;
+		//left: 5%;
+		margin: auto;
 		opacity: 0.95;
 		padding: 50px;
 		padding-right: 40px;
 		padding-bottom: 10px;
 		top: 7.5em;
-		width: 60em;
+		width: 75em;
 		z-index: 110;
 		@include round-bottom(5,20);
 	}
 }
-
+//Desktop and larger screens:
 @media screen and (min-width: $desktop) {
 	.content-container{
 		background: $white top right no-repeat fixed;
 		background-image: url(../images/index_background_800square_flipped.jpg);
+		margin-top: 2em;
+		width: 90%;
+	}
+	.info-box{
+		float: left;
+		left: 5%;
+		margin: 0;
 	}
 }
 

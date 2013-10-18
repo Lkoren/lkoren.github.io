@@ -162,9 +162,11 @@ $li-padding: 1.25em;
 	}
 	.nav-bar {
 		float: right;
-		right: 5%;
+		//right: 5%;
+		right: 0;
 		opacity: 0.9;
-		top: 72px;
+		//top: 72px;
+		top: 52px;
 		width: auto;
 		@include round-corner(25);
 		ul {
@@ -185,6 +187,14 @@ $li-padding: 1.25em;
 			height: $nav-bar-height;
 			background-color: $navbar_background_hover;
 		}
+	}
+}
+
+//Desktop and larger screens:
+@media screen and (min-width: $desktop) {
+	.nav-bar {
+		right: 5%;
+		top: 72px;
 	}
 }
 

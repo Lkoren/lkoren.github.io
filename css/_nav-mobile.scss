@@ -36,7 +36,7 @@
 	li {
 		height: $nav-bar-height;
     	float: left;
-  		font-size: 1.5em;
+  		font-size: 1.75em;
 	    border-bottom: 0;
 		clear: both;
 		width:100%;
@@ -50,7 +50,6 @@
 		height: $nav-bar-height;
 		text-decoration: none;
 		width:auto;
-		font-size: 1.25em;
 		color: #655;
 		line-height: $navbar_line-height;
 		padding-left: 0.5em;
@@ -67,6 +66,7 @@
 	.nav-current {
 		line-height: $navbar_line-height;
 		color: #122;
+		padding-left: 1em;
 	}
 }
 

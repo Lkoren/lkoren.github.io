@@ -120,7 +120,7 @@ input, select {
   .nav-bar li {
     height: 25px;
     float: left;
-    font-size: 1.5em;
+    font-size: 1.75em;
     border-bottom: 0;
     clear: both;
     width: 100%;
@@ -133,7 +133,6 @@ input, select {
     height: 25px;
     text-decoration: none;
     width: auto;
-    font-size: 1.25em;
     color: #655;
     line-height: 32px;
     padding-left: 0.5em; }
@@ -146,7 +145,8 @@ input, select {
       width: 100%; }
   .nav-bar .nav-current {
     line-height: 32px;
-    color: #122; }
+    color: #122;
+    padding-left: 1em; }
 
 @media all and (min-width: 520px) {
   .titlebar_image {

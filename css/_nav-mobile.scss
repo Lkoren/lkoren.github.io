@@ -65,7 +65,7 @@
 	}
 	.nav-current {
 		line-height: $navbar_line-height;
-		color: #122;
+		color: #344;
 		padding-left: 1em;
 	}
 }
@@ -114,6 +114,10 @@ $li-padding: 1.25em;
 		top:76px;
 		width: 100%;
 		z-index: 100;
+		.nav-current {
+			padding-right: $li-padding;
+			padding-left: $li-padding;
+		}
 		ul{
 		  	overflow: hidden;
 		}
@@ -121,7 +125,7 @@ $li-padding: 1.25em;
 			clear: none;
 			display: inline;
 			float: right;
-			font-size: 1.5em;
+			font-size: 2em;
 			padding-top: 0;
 			padding-bottom: 0;
 			width: auto;
@@ -162,10 +166,8 @@ $li-padding: 1.25em;
 	}
 	.nav-bar {
 		float: right;
-		//right: 5%;
 		right: 0;
 		opacity: 0.9;
-		//top: 72px;
 		top: 52px;
 		width: auto;
 		@include round-corner(25);

@@ -145,7 +145,7 @@ input, select {
       width: 100%; }
   .nav-bar .nav-current {
     line-height: 32px;
-    color: #122;
+    color: #344;
     padding-left: 1em; }
 
 @media all and (min-width: 520px) {
@@ -186,13 +186,16 @@ input, select {
     top: 76px;
     width: 100%;
     z-index: 100; }
+    .nav-bar .nav-current {
+      padding-right: 1.25em;
+      padding-left: 1.25em; }
     .nav-bar ul {
       overflow: hidden; }
     .nav-bar li {
       clear: none;
       display: inline;
       float: right;
-      font-size: 1.5em;
+      font-size: 2em;
       padding-top: 0;
       padding-bottom: 0;
       width: auto; }

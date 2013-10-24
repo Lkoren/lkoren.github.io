@@ -17,9 +17,9 @@ $(document).ready(function() {
 	viewer.update();
 	////init done
 	var canvas_drop = document.getElementById('canvas-drop')
-	var dropzone = document.getElementById('dropzone')
+	/*var dropzone = document.getElementById('dropzone')
 	dropzone.addEventListener('dragover', handleDragOver, false);
-	dropzone.addEventListener('drop', handleFileSelect, false);
+	dropzone.addEventListener('drop', handleFileSelect, false); */
 	canvas_drop.addEventListener('dragover', handleDragOver, false);
 	canvas_drop.addEventListener('drop', handleFileSelect, false);
 

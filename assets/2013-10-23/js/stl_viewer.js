@@ -1,5 +1,21 @@
 $(document).ready(function() {
+
 	var mycanvas = document.getElementById('upload_canvas');
+	var viewer = new JSC3D.Viewer(mycanvas)
+	var theScene = new JSC3D.Scene;
+	////Initialize with a default file:
+	//var stlpath = "../../../assets/2013-10-23/stl/box.STL"
+	var stlpath = "../../../assets/2013-10-23/stl/taj.stl"
+	viewer.setParameter('SceneUrl', stlpath);
+    viewer.setParameter('InitRotationX', 20);
+	viewer.setParameter('InitRotationY', 20);
+	viewer.setParameter('InitRotationZ', 0);
+	viewer.setParameter('ModelColor', '#CAA618');
+	viewer.setParameter('BackgroundColor1', '#FFFFFF');
+	viewer.setParameter('BackgroundColor2', '#383840');
+	viewer.init();
+	viewer.update();
+	////init done
 	var canvas_drop = document.getElementById('canvas-drop')
 	var dropzone = document.getElementById('dropzone')
 	dropzone.addEventListener('dragover', handleDragOver, false);
@@ -11,23 +27,19 @@ $(document).ready(function() {
 	function handleFileSelect(evt) {
 	    evt.stopPropagation();
 	    evt.preventDefault();
-
-	    var files = evt.dataTransfer.files; // FileList object.
+	    var files = evt.dataTransfer.files;
 	    console.log(evt)
 	    console.log(files)
 	    preview_stl(files[0])
-	    // files is a FileList of File objects. List some properties.
-
 	  }
 
 	  function handleDragOver(evt) {
 	    evt.stopPropagation();
 	    evt.preventDefault();
-	    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+	    evt.dataTransfer.dropEffect = 'copy';
 	  }
 
 ////jsc3d logic
-	var viewer = new JSC3D.Viewer(mycanvas)
 	var handle_file_select = function(e) {
 		e.stopPropagation()
 		e.preventDefault()
@@ -36,8 +48,6 @@ $(document).ready(function() {
 	}
 
 	function preview_stl(f) {
-		var theScene
-		var stl_loader
 		var reader = new FileReader()
 		var ext = f.name.split(".")[1]
 
@@ -57,9 +67,10 @@ $(document).ready(function() {
 				theScene = new JSC3D.Scene
 		    	stl_loader = new JSC3D.StlLoader()
 		    	stl_loader.parseStl(theScene, e.target.result)
-		      	viewer.init()
+		      	//viewer.init()
 		      	viewer.replaceScene(theScene)
 		      	viewer.update()
+		      	console.log("file reader onload")
 			}
 		})(f)
 
@@ -69,10 +80,4 @@ $(document).ready(function() {
 			reader.readAsBinaryString(f)
 		}
 	}
-
-/*
-	if (window.File) {
-		document.getElementById('file_select').addEventListener('change', handle_file_select, false)
-	}
-	*/
 })
